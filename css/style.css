@@ -106,7 +106,8 @@ body{
     rgba(0,0,0,0.45)
     ),
 
-    url("../assets/images/hero/hero-villa-interior.png");
+   background-image:
+url("../assets/images/hero/hero-villa-interior.png");
 
 
     background-size:cover;
