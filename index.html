@@ -1,131 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
+  <title>CCLUX Furnishings | Bespoke Indoor & Outdoor Furniture</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="CCLUX Furnishings provides bespoke indoor and outdoor furniture solutions for villas, apartments, hotels and resorts."
+  >
 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<title>
-CCLUX FURNISHINGS | Custom Furniture Solutions for European Projects
-</title>
+    html {
+      scroll-behavior: smooth;
+    }
 
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #ffffff;
+      background-color: #111111;
+    }
 
-<meta name="description" content="
-CCLUX FURNISHINGS provides customized indoor and outdoor furniture solutions for European villas, apartments, resorts and luxury projects.
-">
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      background-image:
+        linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 0.55) 0%,
+          rgba(0, 0, 0, 0.28) 50%,
+          rgba(0, 0, 0, 0.18) 100%
+        ),
+        url("images/hero.jpg");
 
-<link rel="stylesheet" href="css/style.css">
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
 
+    .header {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      padding: 30px 5%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 30px;
+    }
 
+    .logo {
+      min-width: 280px;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+    }
+
+    .navigation {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 34px;
+      flex: 1;
+      padding-top: 18px;
+    }
+
+    .navigation a {
+      position: relative;
+      font-size: 18px;
+      white-space: nowrap;
+      transition: opacity 0.3s ease;
+    }
+
+    .navigation a:hover {
+      opacity: 0.7;
+    }
+
+    .navigation a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 0;
+      height: 1px;
+      background-color: #ffffff;
+      transition: width 0.3s ease;
+    }
+
+    .navigation a:hover::after {
+      width: 100%;
+    }
+
+    .header-button {
+      margin-top: 2px;
+      padding: 18px 35px;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      font-size: 18px;
+      white-space: nowrap;
+      transition: all 0.3s ease;
+    }
+
+    .header-button:hover {
+      color: #111111;
+      background-color: #ffffff;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 950px;
+      padding: 95px 5% 80px;
+    }
+
+    .hero-label {
+      margin-bottom: 22px;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    .hero-title {
+      max-width: 900px;
+      margin-bottom: 35px;
+      font-size: clamp(52px, 5vw, 82px);
+      font-weight: 700;
+      line-height: 1.06;
+      letter-spacing: -1px;
+    }
+
+    .hero-description {
+      max-width: 810px;
+      margin-bottom: 50px;
+      font-size: clamp(20px, 1.8vw, 27px);
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.92);
+    }
+
+    .hero-buttons {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      flex-wrap: wrap;
+    }
+
+    .button-primary,
+    .button-secondary {
+      min-width: 225px;
+      padding: 20px 32px;
+      text-align: center;
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+
+    .button-primary {
+      color: #111111;
+      background-color: #ffffff;
+      border: 1px solid #ffffff;
+    }
+
+    .button-primary:hover {
+      color: #ffffff;
+      background-color: transparent;
+    }
+
+    .button-secondary {
+      color: #ffffff;
+      background-color: rgba(0, 0, 0, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(3px);
+    }
+
+    .button-secondary:hover {
+      color: #111111;
+      background-color: #ffffff;
+    }
+
+    @media (max-width: 1200px) {
+      .header {
+        align-items: center;
+      }
+
+      .logo {
+        min-width: auto;
+        font-size: 24px;
+      }
+
+      .navigation {
+        gap: 20px;
+        padding-top: 0;
+      }
+
+      .navigation a {
+        font-size: 15px;
+      }
+
+      .header-button {
+        padding: 14px 22px;
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .header {
+        flex-wrap: wrap;
+        padding: 22px 6%;
+      }
+
+      .logo {
+        width: 100%;
+      }
+
+      .navigation {
+        order: 3;
+        width: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 8px;
+      }
+
+      .header-button {
+        position: absolute;
+        top: 24px;
+        right: 6%;
+      }
+
+      .hero-content {
+        padding: 110px 6% 70px;
+      }
+
+      .hero-title {
+        font-size: clamp(44px, 9vw, 65px);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        min-height: 100svh;
+        background-position: 60% center;
+      }
+
+      .logo {
+        font-size: 20px;
+        letter-spacing: 4px;
+      }
+
+      .header-button {
+        padding: 11px 15px;
+        font-size: 13px;
+      }
+
+      .navigation {
+        gap: 18px;
+      }
+
+      .navigation a {
+        font-size: 14px;
+      }
+
+      .hero-content {
+        padding-top: 90px;
+      }
+
+      .hero-label {
+        font-size: 12px;
+      }
+
+      .hero-title {
+        margin-bottom: 25px;
+        font-size: 43px;
+      }
+
+      .hero-description {
+        margin-bottom: 35px;
+        font-size: 18px;
+      }
+
+      .hero-buttons {
+        gap: 15px;
+      }
+
+      .button-primary,
+      .button-secondary {
+        width: 100%;
+        min-width: auto;
+      }
+    }
+  </style>
 </head>
-
 
 <body>
 
+  <section class="hero" id="home">
 
-<!-- HEADER -->
+    <header class="header">
 
-<header class="header">
+      <a href="#home" class="logo">
+        CCLUX<br>
+        Furnishings
+      </a>
 
+      <nav class="navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#indoor">Indoor Furniture</a>
+        <a href="#outdoor">Outdoor Furniture</a>
+        <a href="#projects">Projects</a>
+        <a href="#partners">Partner With Us</a>
+      </nav>
 
-<div class="logo">
-CCLUX<br>
-FURNISHINGS
-</div>
+      <a href="#contact" class="header-button">
+        Get a Quote
+      </a>
 
+    </header>
 
+    <div class="hero-content">
 
-<nav class="nav">
+      <p class="hero-label">
+        Bespoke Furniture Solutions
+      </p>
 
-<a href="#">
-Home
-</a>
+      <h1 class="hero-title">
+        Bespoke Furniture<br>
+        for Villas, Apartments<br>
+        &amp; Resorts
+      </h1>
 
-<a href="#">
-About
-</a>
+      <p class="hero-description">
+        Tailored indoor and outdoor furniture, crafted to bring comfort,
+        elegance and lasting value to every space.
+      </p>
 
-<a href="#">
-Indoor Furniture
-</a>
+      <div class="hero-buttons">
 
-<a href="#">
-Outdoor Living
-</a>
+        <a href="#projects" class="button-primary">
+          View Our Projects
+        </a>
 
-<a href="#">
-Projects
-</a>
+        <a href="#contact" class="button-secondary">
+          Discuss Your Project
+        </a>
 
-<a href="#">
-Cooperation
-</a>
+      </div>
 
+    </div>
 
-</nav>
-
-
-
-<a class="header-btn">
-Request Quote
-</a>
-
-
-</header>
-
-
-
-<!-- HERO -->
-
-
-<section class="hero">
-
-
-<div class="hero-content">
-
-
-<h1>
-Custom Furniture Solutions
-for European Villas,
-Apartments & Resorts
-</h1>
-
-
-
-<p>
-Creating elegant living spaces with customized indoor and outdoor furniture.
-</p>
-
-
-
-<div class="buttons">
-
-
-<a class="btn-primary">
-Explore Projects
-</a>
-
-
-
-<a class="btn-secondary">
-Request Proposal
-</a>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-
-
+  </section>
 
 </body>
-
 </html>
