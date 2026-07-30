@@ -7,7 +7,6 @@ box-sizing:border-box;
 }
 
 
-
 body{
 
 font-family:
@@ -51,13 +50,13 @@ color:white;
 
 .logo{
 
-font-size:26px;
+font-size:24px;
 
-letter-spacing:5px;
+letter-spacing:4px;
 
 font-weight:600;
 
-line-height:1.1;
+line-height:1.2;
 
 }
 
@@ -67,7 +66,7 @@ line-height:1.1;
 
 display:flex;
 
-gap:35px;
+gap:30px;
 
 }
 
@@ -111,7 +110,7 @@ min-height:800px;
 
 
 
-background-image:brown
+background-image:
 
 linear-gradient(
 rgba(0,0,0,0.45),
@@ -145,7 +144,7 @@ padding-left:80px;
 .hero-content{
 
 
-max-width:850px;
+max-width:750px;
 
 
 color:white;
@@ -158,16 +157,13 @@ color:white;
 .hero h1{
 
 
-font-size:68px;
+font-size:58px;
 
 
 font-weight:600;
 
 
-line-height:1.12;
-
-
-letter-spacing:-1px;
+line-height:1.15;
 
 
 margin-bottom:35px;
@@ -180,16 +176,16 @@ margin-bottom:35px;
 .hero p{
 
 
-font-size:22px;
+font-size:21px;
 
 
 line-height:1.6;
 
 
-max-width:650px;
-
-
 margin-bottom:45px;
+
+
+max-width:650px;
 
 
 }
@@ -202,7 +198,7 @@ margin-bottom:45px;
 display:inline-block;
 
 
-padding:17px 38px;
+padding:16px 35px;
 
 
 margin-right:20px;
@@ -218,8 +214,6 @@ font-size:16px;
 
 
 
-/* WHITE BUTTON */
-
 .btn-primary{
 
 
@@ -230,9 +224,6 @@ color:#222;
 
 }
 
-
-
-/* OUTLINE BUTTON */
 
 
 .btn-secondary{
@@ -248,7 +239,6 @@ color:white;
 
 
 /* MOBILE */
-
 
 @media(max-width:900px){
 
@@ -279,19 +269,14 @@ padding-left:30px;
 
 .hero h1{
 
-
-font-size:42px;
-
+font-size:40px;
 
 }
 
 
-
 .hero p{
 
-
 font-size:18px;
-
 
 }
 
