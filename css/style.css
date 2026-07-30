@@ -100,13 +100,10 @@ body{
 
 
     background-image:
-
-    linear-gradient(
-    rgba(0,0,0,0.45),
-    rgba(0,0,0,0.45)
-    ),
-
-   background-image:
+linear-gradient(
+rgba(0,0,0,0.45),
+rgba(0,0,0,0.45)
+),
 url("../assets/images/hero/hero-villa-interior.png");
 
 
