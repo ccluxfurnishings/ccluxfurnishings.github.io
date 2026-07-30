@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CC Lux Furnishings</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#ffffff;
+color:#333;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+position:fixed;
+width:100%;
+top:0;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+margin-left:30px;
+font-weight:600;
+}
+
+.hero{
+height:100vh;
+background:#f5f5f5;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:56px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+max-width:700px;
+line-height:1.6;
+margin-bottom:40px;
+}
+
+.button{
+background:black;
+color:white;
+padding:15px 40px;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+
+CC Lux Furnishings
+
+</div>
+
+<nav>
+
+<a href=" ">Home</a >
+
+<a href="#">About</a >
+
+<a href="#">Products</a >
+
+<a href="#">Projects</a >
+
+<a href="#">Contact</a >
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<h1>Luxury Furniture For Modern Living</h1>
+
+<p>
+
+Premium Indoor & Outdoor Furnishings | Bespoke Furniture Solutions
+
+</p >
+
+<a href="#" class="button">
+
+Explore Products
+
+</a >
+
+</section>
+
+</body>
+
+</html>
