@@ -44,26 +44,18 @@ body{
 
 }
 
-
 .logo{
 
-    .logo{
+    color:white;
 
-    display:flex;
+    font-size:20px;
 
-    align-items:center;
+    letter-spacing:4px;
 
-}
+    font-weight:400;
 
-.logo img{
-
-    height:55px;
-
-    width:auto;
-
-    display:block;
-
-}
+    line-height:1.2;
+    
 
 }
 
