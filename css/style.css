@@ -58,7 +58,6 @@ body{
 }
 
 
-
 .nav{
 
     display:flex;
@@ -66,7 +65,6 @@ body{
     gap:30px;
 
 }
-
 
 
 .nav a{
@@ -78,7 +76,6 @@ body{
     font-size:16px;
 
 }
-
 
 
 .header-btn{
@@ -94,204 +91,164 @@ body{
 }
 
 
-
-
 /* ================= HERO ================= */
 
 
 .hero{
 
-
     height:100vh;
 
-
     min-height:700px;
-
-
 
     background-image:
 
     linear-gradient(
 
-    rgba(0,0,0,0.45),
+        rgba(0,0,0,0.45),
 
-    rgba(0,0,0,0.45)
+        rgba(0,0,0,0.45)
 
     ),
 
-
     url("../assets/images/hero/hero-villa-interior.png");
-
-
 
     background-size:cover;
 
-
     background-position:center;
-
-
 
     background-repeat:no-repeat;
 
-
-
     display:flex;
-
 
     align-items:center;
 
-
     padding-left:80px;
 
-
-
 }
-
 
 
 .hero-content{
 
-
     max-width:600px;
-
 
     color:white;
 
-
 }
-
 
 
 /* 删除大标题效果 */
 
 .hero h1{
 
-
     font-size:24px;
-
 
     font-weight:300;
 
-
     line-height:1.5;
-
 
     margin-bottom:20px;
 
-
     max-width:400px;
 
-
 }
-
 
 
 /* 两段文字统一大小 */
 
-
 .hero p{
-
 
     font-size:20px;
 
-
     font-weight:300;
-
 
     line-height:1.5;
 
-
     margin-bottom:20px;
-
 
     max-width:400px;
 
-
 }
-
 
 
 /* 按钮 */
 
-
 .buttons a{
-
 
     display:inline-block;
 
-
     padding:16px 35px;
-
 
     margin-right:20px;
 
-
     text-decoration:none;
-
 
     font-size:16px;
 
-
 }
-
 
 
 .btn-primary{
 
-
     background:white;
 
-
     color:#222;
-
 
 }
 
 
-
 .btn-secondary{
-
 
     border:1px solid white;
 
-
     color:white;
-
 
 }
 
 
 /* ================= ABOUT US ================= */
 
+
 .about{
+
     text-align:center;
+
 }
+
 
 .about .section-title{
+
     text-align:center;
+
 }
 
+
 .about .section-text{
+
     max-width:850px;
+
     margin:0 auto;
+
     text-align:left;
+
     line-height:1.9;
+
     font-size:17px;
+
     color:#555;
+
 }
+
 
 /* ================= MOBILE ================= */
 
+
 @media(max-width:900px){
 
-
-}
     .header{
 
         padding:0 25px;
 
     }
-
 
 
     .nav{
@@ -301,53 +258,54 @@ body{
     }
 
 
-
     .hero{
-
 
         padding-left:30px;
 
-
         padding-right:30px;
 
-
     }
-
 
 
     .hero h1{
 
-
         font-size:24px;
 
-
     }
-
 
 
     .hero p{
 
-
         font-size:22px;
 
-
     }
-
 
 
     .buttons a{
 
-
         display:block;
 
+        margin-right:0;
 
         margin-bottom:15px;
 
-
         text-align:center;
-
 
     }
 
+
+    .about .section-text{
+
+        max-width:100%;
+
+        text-align:left;
+
+        font-size:16px;
+
+        line-height:1.8;
+
+        padding:0 20px;
+
+    }
 
 }
