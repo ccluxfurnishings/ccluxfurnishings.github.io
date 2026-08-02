@@ -4,4 +4,4 @@ Bespoke Indoor & Outdoor Furniture Solutions
 
 Website:
 
-https://cdluxhome.github.io/
+https://ccluxfurnishings.github.io/
