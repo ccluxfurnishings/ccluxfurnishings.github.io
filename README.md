@@ -1,2 +1,7 @@
-# github.io
-CC Lux Furnishings – Premium Indoor &amp; Outdoor Furnishings | Bespoke Furniture Solutions
+# CDLUX HOME
+
+Bespoke Indoor & Outdoor Furniture Solutions
+
+Website:
+
+https://cdluxhome.github.io/
