@@ -1,580 +1,30 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
 
-<meta charset="UTF-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>
-CDLUX FURNISHINGS | Custom Furniture Solutions
-</title>
-
-<style>
-
-/* =========================
-   BASIC STYLE
-========================= */
-
-*{
-
-margin:0;
-
-padding:0;
-
-box-sizing:border-box;
-
-}
-
-
-html{
-
-scroll-behavior:smooth;
-
-}
-
-
-body{
-
-font-family:
-
-"Helvetica Neue",
-Arial,
-sans-serif;
-
-color:#222;
-
-background:#fff;
-
-}
-
-
-img{
-
-width:100%;
-
-display:block;
-
-}
-
-
-a{
-
-text-decoration:none;
-
-color:inherit;
-
-}
-
-
-/* =========================
-HEADER
-========================= */
-
-header{
-
-position:absolute;
-
-top:0;
-
-left:0;
-
-width:100%;
-
-padding:35px 6%;
-
-display:flex;
-
-justify-content:space-between;
-
-align-items:center;
-
-z-index:10;
-
-color:white;
-
-}
-
-
-.logo{
-
-font-size:22px;
-
-font-weight:500;
-
-letter-spacing:5px;
-
-line-height:1.2;
-
-}
-
-
-nav{
-
-display:flex;
-
-gap:35px;
-
-}
-
-
-nav a{
-
-font-size:16px;
-
-color:white;
-
-}
-
-
-.contact-btn{
-
-border:1px solid white;
-
-padding:14px 32px;
-
-font-size:15px;
-
-}
-
-
-/* =========================
-HOME HERO
-========================= */
-
-.hero{
-
-height:100vh;
-
-min-height:700px;
-
-background:
-
-linear-gradient(
-
-rgba(0,0,0,0.45),
-
-rgba(0,0,0,0.45)
-
-),
-
-url("assets/images/hero/hero-villa-interior.png");
-
-background-size:cover;
-
-background-position:center;
-
-display:flex;
-
-align-items:center;
-
-padding:0 6%;
-
-color:white;
-
-}
-
-
-.hero-content{
-
-max-width:650px;
-
-}
-
-
-.hero h1{
-
-font-size:42px;
-
-font-weight:400;
-
-line-height:1.35;
-
-margin-bottom:25px;
-
-}
-
-
-.hero p{
-
-font-size:20px;
-
-line-height:1.6;
-
-margin-bottom:40px;
-
-}
-
-
-.hero-button{
-
-display:inline-block;
-
-background:white;
-
-color:#222;
-
-padding:16px 35px;
-
-font-size:16px;
-
-}
-
-
-/* =========================
-SECTION COMMON
-========================= */
-
-section{
-
-padding:90px 6%;
-
-}
-
-
-.section-title{
-
-text-align:center;
-
-font-size:38px;
-
-font-weight:400;
-
-margin-bottom:25px;
-
-}
-
-
-.section-text{
-
-max-width:750px;
-
-margin:auto;
-
-text-align:center;
-
-font-size:18px;
-
-line-height:1.8;
-
-color:#555;
-
-}
-
-
-/* =========================
-ABOUT
-========================= */
-
-.about{
-
-background:#f8f8f8;
-
-}
-
-
-.about-box{
-
-display:flex;
-
-align-items:center;
-
-gap:60px;
-
-margin-top:50px;
-
-}
-
-
-.about-image{
-
-width:50%;
-
-}
-
-
-.about-content{
-
-width:50%;
-
-}
-
-
-.about-content h3{
-
-font-size:30px;
-
-font-weight:400;
-
-margin-bottom:20px;
-
-}
-
-
-.about-content p{
-
-font-size:18px;
-
-line-height:1.8;
-
-color:#555;
-
-}
-
-
-/* =========================
-INDOOR FURNITURE
-========================= */
-
-.products{
-
-display:grid;
-
-grid-template-columns:repeat(2,1fr);
-
-gap:40px;
-
-margin-top:50px;
-
-}
-
-
-.product-card{
-
-overflow:hidden;
-
-}
-
-
-.product-card img{
-
-height:450px;
-
-object-fit:cover;
-
-}
-
-
-.product-card h3{
-
-font-size:28px;
-
-font-weight:400;
-
-margin-top:20px;
-
-}
-
-
-.product-card p{
-
-color:#666;
-
-line-height:1.6;
-
-margin-top:10px;
-
-}
-
-
-/* =========================
-OUTDOOR
-========================= */
-
-.outdoor{
-
-background:#f8f8f8;
-
-}
-
-
-/* =========================
-PROJECTS
-========================= */
-
-.projects-grid{
-
-display:grid;
-
-grid-template-columns:repeat(3,1fr);
-
-gap:30px;
-
-margin-top:50px;
-
-}
-
-
-.project-item{
-
-overflow:hidden;
-
-}
-
-
-.project-item img{
-
-height:350px;
-
-object-fit:cover;
-
-}
-
-
-/* =========================
-CONTACT
-========================= */
-
-.contact{
-
-text-align:center;
-
-}
-
-
-.contact-info{
-
-margin-top:40px;
-
-font-size:18px;
-
-line-height:2;
-
-color:#555;
-
-}
-
-
-.contact-button{
-
-display:inline-block;
-
-margin-top:30px;
-
-padding:16px 40px;
-
-background:#222;
-
-color:white;
-
-}
-
-
-/* =========================
-FOOTER
-========================= */
-
-footer{
-
-background:#111;
-
-color:white;
-
-text-align:center;
-
-padding:30px;
-
-font-size:14px;
-
-}
-
-
-/* =========================
-MOBILE
-========================= */
-
-@media(max-width:900px){
-
-
-header{
-
-padding:25px;
-
-}
-
-
-nav{
-
-display:none;
-
-}
-
-
-.hero{
-
-padding:0 25px;
-
-}
-
-
-.hero h1{
-
-font-size:32px;
-
-}
-
-
-.hero p{
-
-font-size:18px;
-
-}
-
-
-section{
-
-padding:70px 25px;
-
-}
-
-
-.about-box{
-
-flex-direction:column;
-
-}
-
-
-.about-image,
-.about-content{
-
-width:100%;
-
-}
-
-
-.products{
-
-grid-template-columns:1fr;
-
-}
-
-
-.product-card img{
-
-height:350px;
-
-}
-
-
-.projects-grid{
-
-grid-template-columns:1fr;
-
-}
-
-
-.section-title{
-
-font-size:30px;
-
-}
-
-}
-
-</style>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        CDLUX HOME | Bespoke Indoor & Outdoor Furniture
+    </title>
+
+    <meta
+        name="description"
+        content="CDLUX HOME provides bespoke indoor and outdoor furniture solutions for villas, apartments, hotels and resorts worldwide."
+    >
+
+    <meta
+        name="keywords"
+        content="bespoke furniture, custom furniture, indoor furniture, outdoor furniture, villa furniture, hotel furniture, furniture supplier, whole home furniture"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
@@ -582,401 +32,552 @@ font-size:30px;
 <body>
 
 
-<!-- =========================
-HEADER
-========================= -->
+<!-- ================= HEADER ================= -->
 
-<header>
+<header class="header">
 
-<div class="logo">
+    <a href="#home" class="logo">
 
-<a href="#home" class="logo">
+        CDLUX<br>HOME
 
-    CDLUX<br>HOME
-
-</a>
-
-</div>
+    </a>
 
 
-<nav>
+    <nav class="nav">
 
-<a href="#home">
-Home
-</a>
+        <a href="#home">
+            Home
+        </a>
 
-<a href="#about">
-About Us
-</a>
+        <a href="#about">
+            About
+        </a>
 
-<a href="#indoor">
-Indoor Furniture
-</a>
+        <a href="#indoor">
+            Indoor
+        </a>
 
-<a href="#outdoor">
-Outdoor Furniture
-</a>
+        <a href="#outdoor">
+            Outdoor
+        </a>
 
-<a href="#projects">
-Projects
-</a>
+        <a href="#projects">
+            Projects
+        </a>
 
-<a href="#contact">
-Contact Us
-</a>
+        <a href="#contact">
+            Contact
+        </a>
 
-</nav>
+    </nav>
 
 
-<a href="#contact" class="contact-btn">
+    <a href="#contact" class="header-btn">
 
-Get Quote
+        Get Quote
 
-</a>
+    </a>
 
 </header>
 
 
-<!-- =========================
-HOME
-========================= -->
+
+<!-- ================= HERO ================= -->
 
 <section class="hero" id="home">
 
-<div class="hero-content">
+    <div class="hero-content">
 
-<h1>
+        <h1>
 
-</h1>
+            Bespoke Furniture for Villas, Apartments & Resorts
 
-<p>
+        </h1>
 
-CDLUX Furnishings specializes in bespoke furniture solutions for luxury residential and hospitality projects worldwide.
 
-</p>
+        <p>
 
-<a class="hero-button" href="#projects">
+            European Design · Chinese Manufacturing · Global Delivery
 
-View Projects
+        </p>
 
-</a>
 
-</div>
+        <div class="buttons">
+
+            <a href="#projects" class="btn-primary">
+
+                View Projects
+
+            </a>
+
+
+            <a href="#contact" class="btn-secondary">
+
+                Get Quote
+
+            </a>
+
+        </div>
+
+    </div>
 
 </section>
 
 
-<!-- =========================
-ABOUT US
-========================= -->
+
+<!-- ================= ABOUT US ================= -->
 
 <section class="about" id="about">
 
-<h2 class="section-title">
+    <h2 class="section-title">
 
-About Us
+        About Us
 
-</h2>
-
-
-<p class="section-text">
-
-CDLUXHOME — C stands for China, D for our Spanish architects and designers.
-
-We are a Chinese furniture exporter offering full-home customization. 
-Collaborating with Spanish designers, we create furniture tailored to European living habits, spatial standards and aesthetics.
-
-Combining European contemporary design with mature Chinese manufacturing, we supply premium indoor & outdoor furniture for villas, hotels and furniture partners across Europe. 
-We support ODM, OEM and bespoke custom projects with reliable quality and flexible solutions.
-
-</p>
+    </h2>
 
 
-<div class="about-box">
+    <p class="section-text about-intro">
 
-<div class="about-image">
+        CDLUX HOME combines European design expertise with reliable
+        Chinese manufacturing to create bespoke furniture for villas,
+        apartments, hotels and resorts. Working with experienced Spanish
+        architects and designers, we provide customized indoor and outdoor
+        furniture solutions tailored to each project.
 
-<img
-src="assets/images/hero/about/about.jpg"
-alt="CDLUX bespoke furniture project"
->
-
-</div>
-
-
-<div class="about-content">
-
-<h3>
-
-Designed For Exceptional Spaces
-
-</h3>
-
-<p>
-
-From design concept to final delivery, we create bespoke furniture solutions that combine elegance, functionality and lasting quality.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
+    </p>
 
 
-<!-- =========================
-INDOOR FURNITURE
-========================= -->
+    <div class="about-box">
 
-<section id="indoor">
+        <div class="about-image">
 
-<h2 class="section-title">
+            <img
+                src="assets/images/hero/about/about.jpg"
+                alt="CDLUX HOME bespoke furniture project"
+            >
 
-Indoor Furniture
-
-</h2>
-
-
-<p class="section-text">
-
-Elegant furniture solutions for living rooms, dining areas, bedrooms and luxury interiors.
-
-</p>
+        </div>
 
 
-<div class="products">
+        <div class="about-content">
 
-<div class="product-card">
+            <h3>
 
-<img
-src="assets/images/hero/Indoor/indoor1.png"
-alt="Custom living room furniture"
->
+                Designed for Exceptional Spaces
 
-<h3>
-
-Living Spaces
-
-</h3>
-
-<p>
-
-Customized sofas, tables and interior furniture.
-
-</p>
-
-</div>
+            </h3>
 
 
-<div class="product-card">
+            <p>
 
-<img
-src="assets/images/hero/Indoor/indoor2.png"
-alt="Custom dining and bedroom furniture"
->
+                From furniture planning and product customization to
+                manufacturing and international delivery, we provide
+                coordinated solutions that combine aesthetics,
+                functionality and lasting quality.
 
-<h3>
+            </p>
 
-Dining & Bedroom
 
-</h3>
+            <p>
 
-<p>
+                We support ODM, OEM and bespoke projects for international
+                residential, hospitality and furniture partners.
 
-Furniture designed for modern residential projects.
+            </p>
 
-</p>
+        </div>
 
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
-<!-- =========================
-OUTDOOR FURNITURE
-========================= -->
+
+<!-- ================= INDOOR FURNITURE ================= -->
+
+<section class="indoor" id="indoor">
+
+    <h2 class="section-title">
+
+        Indoor Furniture
+
+    </h2>
+
+
+    <p class="section-text section-intro">
+
+        Customized furniture for living rooms, dining areas,
+        bedrooms and complete interior projects.
+
+    </p>
+
+
+    <div class="products">
+
+        <div class="product-card">
+
+            <img
+                src="assets/images/hero/Indoor/indoor1.png"
+                alt="Custom living room furniture"
+            >
+
+
+            <h3>
+
+                Living Spaces
+
+            </h3>
+
+
+            <p>
+
+                Customized sofas, coffee tables, side tables,
+                carpets and coordinated furniture for elegant interiors.
+
+            </p>
+
+        </div>
+
+
+        <div class="product-card">
+
+            <img
+                src="assets/images/hero/Indoor/indoor2.png"
+                alt="Custom dining and bedroom furniture"
+            >
+
+
+            <h3>
+
+                Dining & Bedroom
+
+            </h3>
+
+
+            <p>
+
+                Bespoke dining tables, chairs, beds, nightstands
+                and bedroom furniture for residential projects.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= OUTDOOR FURNITURE ================= -->
 
 <section class="outdoor" id="outdoor">
 
-<h2 class="section-title">
+    <h2 class="section-title">
 
-Outdoor Furniture
+        Outdoor Furniture
 
-</h2>
-
-
-<p class="section-text">
-
-Weather-resistant outdoor furniture solutions for villas, resorts and hospitality projects.
-
-</p>
+    </h2>
 
 
-<div class="products">
+    <p class="section-text section-intro">
 
-<div class="product-card">
+        Weather-resistant outdoor furniture for villas,
+        terraces, poolsides, hotels and resorts.
 
-<img
-src="assets/images/hero/Outdoor/outdoor1.png"
-alt="Outdoor living furniture"
->
-
-<h3>
-
-Outdoor Living
-
-</h3>
-
-<p>
-
-Comfortable outdoor seating and lifestyle solutions.
-
-</p>
-
-</div>
+    </p>
 
 
-<div class="product-card">
+    <div class="products">
 
-<img
-src="assets/images/hero/Outdoor/outdoor2.png"
-alt="Poolside and resort furniture"
->
+        <div class="product-card">
 
-<h3>
-
-Poolside & Resort
-
-</h3>
-
-<p>
-
-Premium outdoor furniture for luxury spaces.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
+            <img
+                src="assets/images/hero/Outdoor/outdoor1.png"
+                alt="Outdoor living furniture"
+            >
 
 
-<!-- =========================
-PROJECTS
-========================= -->
+            <h3>
 
-<section id="projects">
+                Outdoor Living
 
-<h2 class="section-title">
-
-Projects
-
-</h2>
+            </h3>
 
 
-<p class="section-text">
+            <p>
 
-Furniture solutions created for villas, apartments, hotels and resorts.
+                Comfortable outdoor sofas, tables and seating
+                solutions designed for terraces and gardens.
 
-</p>
+            </p>
 
-
-<div class="projects-grid">
-
-<div class="project-item">
-
-<img
-src="assets/images/hero/Projects/projects1.png"
-alt="Luxury villa furniture project"
->
-
-</div>
+        </div>
 
 
-<div class="project-item">
+        <div class="product-card">
 
-<img
-src="assets/images/hero/Projects/project2.png"
-alt="Modern apartment furniture project"
->
-
-</div>
+            <img
+                src="assets/images/hero/Outdoor/outdoor2.png"
+                alt="Poolside and resort furniture"
+            >
 
 
-<div class="project-item">
+            <h3>
 
-<img
-src="assets/images/hero/Projects/project3.png"
-alt="Hotel and resort furniture project"
->
+                Poolside & Resort
 
-</div>
+            </h3>
 
-</div>
+
+            <p>
+
+                Premium loungers, waterproof rugs and outdoor
+                furniture for luxury hospitality spaces.
+
+            </p>
+
+        </div>
+
+    </div>
 
 </section>
 
 
-<!-- =========================
-CONTACT
-========================= -->
+
+<!-- ================= PROJECTS ================= -->
+
+<section class="projects" id="projects">
+
+    <h2 class="section-title">
+
+        Projects
+
+    </h2>
+
+
+    <p class="section-text section-intro">
+
+        Furniture solutions created for villas, apartments,
+        hotels and resorts.
+
+    </p>
+
+
+    <div class="projects-grid">
+
+        <div class="project-item">
+
+            <img
+                src="assets/images/hero/Projects/projects1.png"
+                alt="Luxury villa furniture project"
+            >
+
+
+            <h3>
+
+                Luxury Villa
+
+            </h3>
+
+        </div>
+
+
+        <div class="project-item">
+
+            <img
+                src="assets/images/hero/Projects/project2.png"
+                alt="Modern apartment furniture project"
+            >
+
+
+            <h3>
+
+                Modern Apartment
+
+            </h3>
+
+        </div>
+
+
+        <div class="project-item">
+
+            <img
+                src="assets/images/hero/Projects/project3.png"
+                alt="Hotel and resort furniture project"
+            >
+
+
+            <h3>
+
+                Hotel & Resort
+
+            </h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= CONTACT ================= -->
 
 <section class="contact" id="contact">
 
-<h2 class="section-title">
+    <h2 class="section-title">
 
-Contact Us
+        Contact Us
 
-</h2>
-
-
-<p class="section-text">
-
-Let's discuss your next furniture project.
-
-</p>
+    </h2>
 
 
-<div class="contact-info">
+    <p class="section-text section-intro">
 
-Email:
-<a href="mailto:ccluxhome@gmail.com">
-ccluxhome@gmail.com
-</a>
+        Send us your floor plan, furniture list, reference images
+        or project requirements. Let’s discuss your next project.
 
-<br>
-
-WhatsApp:
-<a
-href="https://wa.me/8618126791433"
-target="_blank"
-rel="noopener noreferrer"
->
-+86 181 2679 1433
-</a>
-
-</div>
+    </p>
 
 
-<a
-class="contact-button"
-href="mailto:ccluxhome@gmail.com"
->
+    <div class="contact-grid">
 
-Request Quote
+        <div class="contact-item">
 
-</a>
+            <h3>
+                Email
+            </h3>
+
+            <a href="mailto:ccluxhome@gmail.com">
+
+                ccluxhome@gmail.com
+
+            </a>
+
+        </div>
+
+
+        <div class="contact-item">
+
+            <h3>
+                WhatsApp
+            </h3>
+
+            <a
+                href="https://wa.me/8618126791433"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+
+                +86 181 2679 1433
+
+            </a>
+
+        </div>
+
+
+        <div class="contact-item">
+
+            <h3>
+                Service
+            </h3>
+
+            <p>
+
+                Indoor · Outdoor · Whole Home
+
+            </p>
+
+        </div>
+
+
+        <div class="contact-item">
+
+            <h3>
+                Markets
+            </h3>
+
+            <p>
+
+                Europe · Middle East · Asia
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <a
+        class="contact-button"
+        href="mailto:ccluxhome@gmail.com"
+    >
+
+        Request a Quote
+
+    </a>
 
 </section>
 
 
-<footer>
 
-© 2026 CDLUX Furnishings. All Rights Reserved.
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-main">
+
+        <div class="footer-brand">
+
+            <h3>
+
+                CDLUX HOME
+
+            </h3>
+
+
+            <p>
+
+                Bespoke Indoor & Outdoor Furniture Solutions
+
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#indoor">
+                Indoor
+            </a>
+
+            <a href="#outdoor">
+                Outdoor
+            </a>
+
+            <a href="#projects">
+                Projects
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 CDLUX HOME. All Rights Reserved.
+
+    </div>
 
 </footer>
 
