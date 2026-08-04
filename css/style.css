@@ -800,21 +800,15 @@ text-align:center;
 
 .contact-grid{
 
-
-max-width:1000px;
-
+max-width:1200px;
 
 margin:55px auto 0;
 
-
 display:grid;
 
-
-grid-template-columns:repeat(3,1fr);
-
+grid-template-columns:repeat(5,1fr);
 
 gap:30px;
-
 
 }
 
