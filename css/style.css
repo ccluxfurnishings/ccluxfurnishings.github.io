@@ -633,26 +633,19 @@ margin-bottom:18px;
 
 
 
-.products{
+..products{
 
-
-max-width:1300px;
-
+max-width:1400px;
 
 margin:55px auto 0;
 
-
 display:grid;
 
+grid-template-columns:repeat(3,1fr);
 
-grid-template-columns:repeat(2,1fr);
-
-
-gap:40px;
-
+gap:35px;
 
 }
-
 
 
 
@@ -660,7 +653,7 @@ gap:40px;
 .product-card img{
 
 
-height:500px;
+height:380px;
 
 
 object-fit:cover;
