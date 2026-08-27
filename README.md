@@ -1,4 +1,4 @@
-# CDLUX HOME
+# CCLUX HOME
 
 Bespoke Indoor & Outdoor Furniture Solutions
 
