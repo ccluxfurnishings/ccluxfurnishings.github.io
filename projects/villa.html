@@ -8,9 +8,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>
-Luxury Villa Furniture Project | CCLUX HOME
-</title>
+<title>Luxury Villa Furniture Project | CCLUX HOME</title>
 
 <meta
 name="description"
@@ -18,43 +16,40 @@ content="Luxury villa furniture project by CCLUX HOME, combining bespoke furnitu
 
 >
 
-<link
-rel="stylesheet"
-href="../css/style.css"
->
+<link rel="stylesheet" href="../css/style.css">
 
 <style>
 
 /* ==================================================
-VILLA PROJECT PAGE
+PROJECT DETAIL
 ================================================== */
 
-.villa-page {
-    padding: 140px 0 100px;
+.project-detail {
+    padding: 150px 0 100px;
+    background: #ffffff;
 }
 
-.villa-header {
-    max-width: 900px;
-    margin: 0 auto 60px;
+.project-detail-header {
+    max-width: 850px;
+    margin-bottom: 60px;
 }
 
-.villa-label {
+.project-detail-label {
     font-size: 12px;
     letter-spacing: 2.5px;
-    text-transform: uppercase;
     color: #888;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
 }
 
-.villa-title {
-    font-size: 48px;
+.project-detail-title {
+    font-size: 52px;
     font-weight: 400;
     line-height: 1.2;
     margin-bottom: 22px;
 }
 
-.villa-description {
-    max-width: 750px;
+.project-detail-description {
+    max-width: 780px;
     font-size: 17px;
     line-height: 1.8;
     color: #666;
@@ -62,45 +57,66 @@ VILLA PROJECT PAGE
 
 
 /* ==================================================
-VILLA GALLERY
+PROJECT GALLERY
 ================================================== */
 
-.villa-gallery {
+/*
+第一行：
+villa01
+占满整行
+
+下面：
+villa02 + villa03
+villa04 + villa05
+villa06 + villa07
+*/
+
+.project-gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
+    width: 100%;
 }
 
 
-/* FIRST IMAGE — LARGE */
+/* ==================================================
+第一张大图
+================================================== */
 
-.villa-gallery .villa-image:first-child {
+.gallery-main {
     grid-column: 1 / -1;
-}
-
-.villa-gallery .villa-image:first-child img {
-    height: 650px;
-}
-
-
-/* OTHER IMAGES */
-
-.villa-image {
-    display: block;
+    width: 100%;
     overflow: hidden;
     background: #f5f5f5;
 }
 
-.villa-image img {
+.gallery-main img {
     width: 100%;
-    height: 430px;
-    object-fit: contain;
+    height: auto;
     display: block;
-    background: #f5f5f5;
-    transition: transform 0.5s ease;
+    object-fit: contain;
 }
 
-.villa-image:hover img {
+
+/* ==================================================
+下面六张图片
+================================================== */
+
+.gallery-item {
+    width: 100%;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
     transform: scale(1.02);
 }
 
@@ -109,85 +125,37 @@ VILLA GALLERY
 PROJECT INFORMATION
 ================================================== */
 
-.villa-info {
-    max-width: 900px;
-    margin: 80px auto 0;
+.project-info {
+    max-width: 850px;
+    margin-top: 80px;
     padding-top: 60px;
     border-top: 1px solid #dddddd;
 }
 
-.villa-info h2 {
-    font-size: 30px;
+.project-info h2 {
+    font-size: 32px;
     font-weight: 400;
     margin-bottom: 22px;
 }
 
-.villa-info p {
+.project-info p {
     font-size: 16px;
     line-height: 1.8;
-    color: #666;
+    color: #555;
     margin-bottom: 18px;
 }
 
-
-/* ==================================================
-BACK BUTTON
-================================================== */
-
-.villa-back {
+.project-back {
     display: inline-block;
-    margin-top: 25px;
-    font-size: 13px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
+    margin-top: 22px;
+    font-size: 15px;
     border-bottom: 1px solid #222;
     padding-bottom: 4px;
+    transition: opacity 0.3s ease;
 }
 
-.villa-back:hover {
+.project-back:hover {
     opacity: 0.6;
-}
-
-
-/* ==================================================
-TABLET
-================================================== */
-
-@media (max-width: 850px) {
-
-    .villa-page {
-        padding: 115px 0 70px;
-    }
-
-    .villa-header {
-        margin-bottom: 40px;
-    }
-
-    .villa-title {
-        font-size: 38px;
-    }
-
-    .villa-description {
-        font-size: 16px;
-    }
-
-    .villa-gallery {
-        gap: 15px;
-    }
-
-    .villa-gallery .villa-image:first-child img {
-        height: 500px;
-    }
-
-    .villa-image img {
-        height: 350px;
-    }
-
-    .villa-info {
-        margin-top: 60px;
-        padding-top: 45px;
-    }
-
 }
 
 
@@ -195,61 +163,62 @@ TABLET
 MOBILE
 ================================================== */
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
-    .villa-page {
-        padding: 105px 0 60px;
+    .project-detail {
+        padding: 120px 0 70px;
     }
 
-    .villa-header {
-        margin-bottom: 30px;
+    .project-detail-header {
+        margin-bottom: 40px;
     }
 
-    .villa-label {
-        font-size: 11px;
-        letter-spacing: 2px;
+    .project-detail-title {
+        font-size: 38px;
     }
 
-    .villa-title {
-        font-size: 32px;
-        margin-bottom: 18px;
-    }
-
-    .villa-description {
+    .project-detail-description {
         font-size: 15px;
-        line-height: 1.75;
     }
 
-    .villa-gallery {
+    .project-gallery {
         grid-template-columns: 1fr;
-        gap: 14px;
+        gap: 18px;
     }
 
-    .villa-gallery .villa-image:first-child {
-        grid-column: auto;
+    .gallery-main {
+        grid-column: 1;
     }
 
-    .villa-gallery .villa-image:first-child img {
-        height: auto;
-        min-height: 0;
+    .gallery-item {
+        width: 100%;
     }
 
-    .villa-image img {
-        height: auto;
-        object-fit: contain;
+    .project-info {
+        margin-top: 55px;
+        padding-top: 45px;
     }
 
-    .villa-info {
-        margin-top: 50px;
-        padding-top: 40px;
+    .project-info h2 {
+        font-size: 28px;
     }
 
-    .villa-info h2 {
-        font-size: 27px;
+}
+
+
+/* ==================================================
+SMALL MOBILE
+================================================== */
+
+@media (max-width: 500px) {
+
+    .project-detail-title {
+        font-size: 32px;
     }
 
-    .villa-info p {
+    .project-detail-description {
         font-size: 15px;
+        line-height: 1.7;
     }
 
 }
@@ -266,43 +235,25 @@ HEADER
 
 <header class="header">
 
-<a
-href="../index.html"
-class="logo"
-
->
-
-CCLUX<br>HOME </a>
+<a href="../index.html" class="logo">
+CCLUX<br>HOME
+</a>
 
 <nav class="nav">
 
-<a href="../index.html#home">
-Home
-</a>
+<a href="../index.html#home">Home</a>
 
-<a href="../index.html#about">
-About
-</a>
+<a href="../index.html#about">About</a>
 
-<a href="../index.html#indoor">
-Indoor
-</a>
+<a href="../index.html#indoor">Indoor</a>
 
-<a href="../index.html#outdoor">
-Outdoor
-</a>
+<a href="../index.html#outdoor">Outdoor</a>
 
-<a href="../index.html#projects">
-Projects
-</a>
+<a href="../index.html#projects">Projects</a>
 
-<a href="../index.html#delivery">
-Delivery
-</a>
+<a href="../index.html#delivery">Delivery</a>
 
-<a href="../index.html#contact">
-Contact
-</a>
+<a href="../index.html#contact">Contact</a>
 
 </nav>
 
@@ -317,26 +268,28 @@ Get Quote </a>
 </header>
 
 <!-- ==================================================
-VILLA PROJECT
+PROJECT DETAIL
 ================================================== -->
 
-<section class="villa-page">
+<section class="project-detail">
 
 <div class="container">
 
-<!-- PROJECT HEADER -->
+<!-- ==================================================
+PROJECT HEADER
+================================================== -->
 
-<div class="villa-header">
+<div class="project-detail-header">
 
-<p class="villa-label">
+<p class="project-detail-label">
 SELECTED PROJECT
 </p>
 
-<h1 class="villa-title">
+<h1 class="project-detail-title">
 Luxury Villa
 </h1>
 
-<p class="villa-description">
+<p class="project-detail-description">
 A bespoke furniture solution created for a contemporary luxury villa.
 The project combines refined European aesthetics, functional design
 and customized furniture tailored to the character of each space.
@@ -345,63 +298,96 @@ and customized furniture tailored to the character of each space.
 </div>
 
 <!-- ==================================================
-VILLA GALLERY
+7 IMAGE PROJECT GALLERY
 ================================================== -->
 
 <div class="project-gallery">
 
-    <!-- 第一张：整行大图 -->
-    <div class="gallery-main">
-        <img
-            src="../assets/images/hero/Projects/villa01.png"
-            alt="Luxury villa interior by CCLUX HOME"
-        >
-    </div>
+<!-- ==================================================
+ROW 1 — LARGE IMAGE
+================================================== -->
 
-    <!-- 第二行 -->
-    <div class="gallery-item">
-        <img
-            src="../assets/images/hero/Projects/villa02.png"
-            alt="Luxury villa living room furniture"
-        >
-    </div>
+<div class="gallery-main">
 
-    <div class="gallery-item">
-        <img
-            src="../assets/images/hero/Projects/villa03.png"
-            alt="Custom villa furniture"
-        >
-    </div>
+<img
+src="../assets/images/hero/Projects/villa01.png"
+alt="Luxury villa interior by CCLUX HOME"
 
-    <!-- 第三行 -->
-    <div class="gallery-item">
-        <img
-            src="../assets/images/hero/Projects/villa04.png"
-            alt="Luxury villa interior furniture"
-        >
-    </div>
+>
 
-    <div class="gallery-item">
-        <img
-            src="../assets/images/hero/Projects/villa05.png"
-            alt="Luxury villa dining area"
-        >
-    </div>
+</div>
 
-    <!-- 第四行 -->
-    <div class="gallery-item">
-        <img
-            src="../assets/images/hero/Projects/villa06.png"
-            alt="Luxury villa bedroom furniture"
-        >
-    </div>
+<!-- ==================================================
+ROW 2
+================================================== -->
 
-    <div class="gallery-item">
-        <img
-            src="../assets/images/hero/Projects/villa07.png"
-            alt="Luxury villa custom furniture"
-        >
-    </div>
+<div class="gallery-item">
+
+<img
+src="../assets/images/hero/Projects/villa02.png"
+alt="Luxury villa living room furniture"
+
+>
+
+</div>
+
+<div class="gallery-item">
+
+<img
+src="../assets/images/hero/Projects/villa03.png"
+alt="Custom villa furniture"
+
+>
+
+</div>
+
+<!-- ==================================================
+ROW 3
+================================================== -->
+
+<div class="gallery-item">
+
+<img
+src="../assets/images/hero/Projects/villa04.png"
+alt="Luxury villa interior furniture"
+
+>
+
+</div>
+
+<div class="gallery-item">
+
+<img
+src="../assets/images/hero/Projects/villa05.png"
+alt="Luxury villa dining area"
+
+>
+
+</div>
+
+<!-- ==================================================
+ROW 4
+================================================== -->
+
+<div class="gallery-item">
+
+<img
+src="../assets/images/hero/Projects/villa06.png"
+alt="Luxury villa bedroom furniture"
+
+>
+
+</div>
+
+<div class="gallery-item">
+
+<img
+src="../assets/images/hero/Projects/villa07.png"
+alt="Luxury villa custom furniture"
+
+>
+
+</div>
 
 </div>
 
@@ -409,7 +395,7 @@ VILLA GALLERY
 PROJECT INFORMATION
 ================================================== -->
 
-<div class="villa-info">
+<div class="project-info">
 
 <h2>
 Furniture & Interior Solutions
@@ -429,7 +415,7 @@ to each project.
 
 <a
 href="../index.html#projects"
-class="villa-back"
+class="project-back"
 
 >
 
