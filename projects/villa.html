@@ -1,5 +1,5 @@
-```html
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -8,20 +8,257 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Luxury Villa Furniture Project | CCLUX HOME</title>
+<title>
+Luxury Villa Furniture Project | CCLUX HOME
+</title>
 
 <meta
 name="description"
 content="Luxury villa furniture project by CCLUX HOME, combining bespoke furniture, European design and professional manufacturing."
+
 >
 
-<link rel="stylesheet" href="../css/style.css">
+<link
+rel="stylesheet"
+href="../css/style.css"
+>
+
+<style>
+
+/* ==================================================
+VILLA PROJECT PAGE
+================================================== */
+
+.villa-page {
+    padding: 140px 0 100px;
+}
+
+.villa-header {
+    max-width: 900px;
+    margin: 0 auto 60px;
+}
+
+.villa-label {
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.villa-title {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.villa-description {
+    max-width: 750px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #666;
+}
+
+
+/* ==================================================
+VILLA GALLERY
+================================================== */
+
+.villa-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+
+/* FIRST IMAGE — LARGE */
+
+.villa-gallery .villa-image:first-child {
+    grid-column: 1 / -1;
+}
+
+.villa-gallery .villa-image:first-child img {
+    height: 650px;
+}
+
+
+/* OTHER IMAGES */
+
+.villa-image {
+    display: block;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.villa-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: contain;
+    display: block;
+    background: #f5f5f5;
+    transition: transform 0.5s ease;
+}
+
+.villa-image:hover img {
+    transform: scale(1.02);
+}
+
+
+/* ==================================================
+PROJECT INFORMATION
+================================================== */
+
+.villa-info {
+    max-width: 900px;
+    margin: 80px auto 0;
+    padding-top: 60px;
+    border-top: 1px solid #dddddd;
+}
+
+.villa-info h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+
+.villa-info p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 18px;
+}
+
+
+/* ==================================================
+BACK BUTTON
+================================================== */
+
+.villa-back {
+    display: inline-block;
+    margin-top: 25px;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #222;
+    padding-bottom: 4px;
+}
+
+.villa-back:hover {
+    opacity: 0.6;
+}
+
+
+/* ==================================================
+TABLET
+================================================== */
+
+@media (max-width: 850px) {
+
+    .villa-page {
+        padding: 115px 0 70px;
+    }
+
+    .villa-header {
+        margin-bottom: 40px;
+    }
+
+    .villa-title {
+        font-size: 38px;
+    }
+
+    .villa-description {
+        font-size: 16px;
+    }
+
+    .villa-gallery {
+        gap: 15px;
+    }
+
+    .villa-gallery .villa-image:first-child img {
+        height: 500px;
+    }
+
+    .villa-image img {
+        height: 350px;
+    }
+
+    .villa-info {
+        margin-top: 60px;
+        padding-top: 45px;
+    }
+
+}
+
+
+/* ==================================================
+MOBILE
+================================================== */
+
+@media (max-width: 600px) {
+
+    .villa-page {
+        padding: 105px 0 60px;
+    }
+
+    .villa-header {
+        margin-bottom: 30px;
+    }
+
+    .villa-label {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .villa-title {
+        font-size: 32px;
+        margin-bottom: 18px;
+    }
+
+    .villa-description {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    .villa-gallery {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .villa-gallery .villa-image:first-child {
+        grid-column: auto;
+    }
+
+    .villa-gallery .villa-image:first-child img {
+        height: auto;
+        min-height: 0;
+    }
+
+    .villa-image img {
+        height: auto;
+        object-fit: contain;
+    }
+
+    .villa-info {
+        margin-top: 50px;
+        padding-top: 40px;
+    }
+
+    .villa-info h2 {
+        font-size: 27px;
+    }
+
+    .villa-info p {
+        font-size: 15px;
+    }
+
+}
+
+</style>
 
 </head>
 
-
 <body>
-
 
 <!-- ==================================================
 HEADER
@@ -29,10 +266,13 @@ HEADER
 
 <header class="header">
 
-<a href="../index.html" class="logo">
-CCLUX<br>HOME
-</a>
+<a
+href="../index.html"
+class="logo"
 
+>
+
+CCLUX<br>HOME </a>
 
 <nav class="nav">
 
@@ -56,50 +296,47 @@ Outdoor
 Projects
 </a>
 
+<a href="../index.html#delivery">
+Delivery
+</a>
+
 <a href="../index.html#contact">
 Contact
 </a>
 
 </nav>
 
-
 <a
 href="../index.html#contact"
 class="header-btn"
+
 >
-Get Quote
-</a>
+
+Get Quote </a>
 
 </header>
 
-
-
 <!-- ==================================================
-PROJECT DETAIL
+VILLA PROJECT
 ================================================== -->
 
-<section class="project-detail">
+<section class="villa-page">
 
 <div class="container">
 
+<!-- PROJECT HEADER -->
 
-<!-- ==================================================
-PROJECT HEADER
-================================================== -->
+<div class="villa-header">
 
-<div class="project-detail-header">
-
-<p class="project-detail-label">
+<p class="villa-label">
 SELECTED PROJECT
 </p>
 
-
-<h1 class="project-detail-title">
+<h1 class="villa-title">
 Luxury Villa
 </h1>
 
-
-<p class="project-detail-description">
+<p class="villa-description">
 A bespoke furniture solution created for a contemporary luxury villa.
 The project combines refined European aesthetics, functional design
 and customized furniture tailored to the character of each space.
@@ -107,93 +344,149 @@ and customized furniture tailored to the character of each space.
 
 </div>
 
-
-
 <!-- ==================================================
-PROJECT GALLERY
-7 IMAGES
-1 LARGE + 6 TWO COLUMN
+VILLA GALLERY
 ================================================== -->
 
-<div class="project-gallery">
+<div class="villa-gallery">
 
+<!-- IMAGE 01 — LARGE -->
 
-<!-- IMAGE 1 - LARGE -->
+<a
+href="../assets/images/hero/Projects/villa01.png"
+target="_blank"
+class="villa-image"
+
+>
 
 <img
 src="../assets/images/hero/Projects/villa01.png"
 alt="Luxury villa interior by CCLUX HOME"
+loading="eager"
+
 >
 
+</a>
 
+<!-- IMAGE 02 -->
 
-<!-- IMAGE 2 -->
+<a
+href="../assets/images/hero/Projects/villa02.png"
+target="_blank"
+class="villa-image"
+
+>
 
 <img
 src="../assets/images/hero/Projects/villa02.png"
 alt="Luxury villa living room furniture"
+loading="lazy"
+
 >
 
+</a>
 
+<!-- IMAGE 03 -->
 
-<!-- IMAGE 3 -->
+<a
+href="../assets/images/hero/Projects/villa03.png"
+target="_blank"
+class="villa-image"
+
+>
 
 <img
 src="../assets/images/hero/Projects/villa03.png"
 alt="Custom villa furniture"
+loading="lazy"
+
 >
 
+</a>
 
+<!-- IMAGE 04 -->
 
-<!-- IMAGE 4 -->
+<a
+href="../assets/images/hero/Projects/villa04.png"
+target="_blank"
+class="villa-image"
+
+>
 
 <img
 src="../assets/images/hero/Projects/villa04.png"
 alt="Luxury villa interior furniture"
+loading="lazy"
+
 >
 
+</a>
 
+<!-- IMAGE 05 -->
 
-<!-- IMAGE 5 -->
+<a
+href="../assets/images/hero/Projects/villa05.png"
+target="_blank"
+class="villa-image"
+
+>
 
 <img
 src="../assets/images/hero/Projects/villa05.png"
 alt="Luxury villa dining area"
+loading="lazy"
+
 >
 
+</a>
 
+<!-- IMAGE 06 -->
 
-<!-- IMAGE 6 -->
+<a
+href="../assets/images/hero/Projects/villa06.png"
+target="_blank"
+class="villa-image"
+
+>
 
 <img
 src="../assets/images/hero/Projects/villa06.png"
 alt="Luxury villa bedroom furniture"
+loading="lazy"
+
 >
 
+</a>
 
+<!-- IMAGE 07 -->
 
-<!-- IMAGE 7 -->
+<a
+href="../assets/images/hero/Projects/villa07.png"
+target="_blank"
+class="villa-image"
+
+>
 
 <img
 src="../assets/images/hero/Projects/villa07.png"
 alt="Luxury villa custom furniture"
+loading="lazy"
+
 >
 
+</a>
 
 </div>
-
-
 
 <!-- ==================================================
 PROJECT INFORMATION
 ================================================== -->
 
-<div class="project-info">
+<div class="villa-info">
 
 <h2>
 Furniture & Interior Solutions
 </h2>
-
 
 <p>
 CCLUX HOME provides customized furniture solutions for luxury
@@ -201,29 +494,25 @@ residential projects, including sofas, dining furniture, bedroom
 furniture, storage solutions, rugs and outdoor furniture.
 </p>
 
-
 <p>
 From design coordination and furniture sourcing to manufacturing
 and international delivery, we provide a complete solution tailored
 to each project.
 </p>
 
-
 <a
 href="../index.html#projects"
-class="project-back"
+class="villa-back"
+
 >
-← Back to Projects
-</a>
+
+← Back to Projects </a>
 
 </div>
-
 
 </div>
 
 </section>
-
-
 
 <!-- ==================================================
 FOOTER
@@ -233,7 +522,55 @@ FOOTER
 
 <div class="container">
 
+<div class="footer-content">
+
+<div>
+
+<h3>
+CCLUX HOME
+</h3>
+
 <p>
+Custom Furniture · European Design · Worldwide Delivery
+</p>
+
+</div>
+
+<div class="footer-links">
+
+<a href="../index.html#home">
+Home
+</a>
+
+<a href="../index.html#about">
+About
+</a>
+
+<a href="../index.html#indoor">
+Indoor
+</a>
+
+<a href="../index.html#outdoor">
+Outdoor
+</a>
+
+<a href="../index.html#projects">
+Projects
+</a>
+
+<a href="../index.html#delivery">
+Delivery
+</a>
+
+<a href="../index.html#contact">
+Contact
+</a>
+
+</div>
+
+</div>
+
+<p class="copyright">
 © 2026 CCLUX HOME. All Rights Reserved.
 </p>
 
@@ -241,8 +578,6 @@ FOOTER
 
 </footer>
 
-
 </body>
 
 </html>
-```
