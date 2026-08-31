@@ -1,3 +1,4 @@
+```css
 /* ==================================================
 RESET
 ================================================== */
@@ -56,26 +57,32 @@ HEADER
     padding: 0 60px;
 
     z-index: 10;
+
     color: white;
 }
 
 .logo {
     font-size: 22px;
     font-weight: 400;
+
     letter-spacing: 5px;
     line-height: 1.2;
+
     color: white;
 }
 
 .nav {
     display: flex;
     align-items: center;
+
     gap: 32px;
 }
 
 .nav a {
     color: white;
+
     font-size: 15px;
+
     transition: opacity 0.3s ease;
 }
 
@@ -129,12 +136,14 @@ HERO
 
 .hero-content {
     max-width: 700px;
+
     color: white;
 }
 
 .hero h1 {
     font-size: 48px;
     font-weight: 400;
+
     line-height: 1.25;
 
     margin-bottom: 20px;
@@ -155,7 +164,9 @@ BUTTONS
 
 .buttons {
     display: flex;
+
     gap: 16px;
+
     flex-wrap: wrap;
 }
 
@@ -200,6 +211,7 @@ section {
 .section-title {
     font-size: 38px;
     font-weight: 400;
+
     line-height: 1.3;
 
     margin-bottom: 20px;
@@ -209,6 +221,7 @@ section {
     max-width: 700px;
 
     font-size: 17px;
+
     color: #666;
 
     margin-bottom: 50px;
@@ -226,6 +239,7 @@ ABOUT
 
 .about-grid {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
 
     gap: 70px;
@@ -235,6 +249,7 @@ ABOUT
 
 .about-image img {
     width: 100%;
+
     height: 520px;
 
     object-fit: cover;
@@ -249,6 +264,7 @@ ABOUT
 
 .about-content p {
     font-size: 16px;
+
     color: #555;
 
     margin-bottom: 18px;
@@ -274,6 +290,7 @@ DESIGNER SECTION
 
 .designer-section {
     display: grid;
+
     grid-template-columns: 380px 1fr;
 
     gap: 70px;
@@ -281,6 +298,7 @@ DESIGNER SECTION
     align-items: center;
 
     margin-top: 85px;
+
     padding-top: 75px;
 
     border-top: 1px solid #dddddd;
@@ -292,9 +310,11 @@ DESIGNER SECTION
 
 .designer-image img {
     width: 100%;
+
     height: 500px;
 
     object-fit: cover;
+
     object-position: center top;
 
     background: #eeeeee;
@@ -333,6 +353,7 @@ DESIGNER SECTION
 
 .designer-content p {
     font-size: 16px;
+
     color: #555555;
 
     line-height: 1.8;
@@ -342,6 +363,7 @@ DESIGNER SECTION
 
 .designer-details {
     display: flex;
+
     flex-wrap: wrap;
 
     gap: 10px;
@@ -357,6 +379,7 @@ DESIGNER SECTION
     border: 1px solid #d7d7d7;
 
     font-size: 13px;
+
     color: #555555;
 
     background: #ffffff;
@@ -378,6 +401,7 @@ PRODUCTS
 
 .product-grid {
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
 
     gap: 35px;
@@ -389,9 +413,12 @@ PRODUCTS
 
 .product-card img {
     width: 100%;
+
     height: 440px;
 
     object-fit: cover;
+
+    display: block;
 }
 
 .product-info {
@@ -400,6 +427,7 @@ PRODUCTS
 
 .product-info h3 {
     font-size: 21px;
+
     font-weight: 400;
 }
 
@@ -415,110 +443,101 @@ PROJECTS
 
 .projects-grid {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
 
     gap: 25px;
+
+    align-items: stretch;
 }
+
+
+/* PROJECT CARD */
 
 .project-card {
     position: relative;
 
-    overflow: hidden;
-}
-
-.project-card img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
     display: block;
-
-    transition: transform 0.4s ease;
-}
-
-.project-card:hover img {
-    transform: scale(1.03);
-}
-
-.project-overlay {
-    position: absolute;
-
-    left: 0;
-    bottom: 0;
 
     width: 100%;
 
-    padding: 45px 25px 25px;
-
-    color: white;
-
-    background:
-        linear-gradient(
-            transparent,
-            rgba(0, 0, 0, 0.68)
-        );
-}
-
-.project-overlay h3 {
-    font-size: 22px;
-    font-weight: 400;
-}
-
-/* =========================
-PROJECT CARD LINK
-========================= */
-
-.project-card {
-    position: relative;
-    display: block;
     overflow: hidden;
+
     text-decoration: none;
+
     color: inherit;
+
     cursor: pointer;
+
+    background: #f5f5f5;
 }
+
+
+/* PROJECT IMAGE */
 
 .project-card img {
     width: 100%;
-    height: 460px;
-    object-fit: contain;
+
+    aspect-ratio: 4 / 3;
+
+    height: auto;
+
+    object-fit: cover;
+
     display: block;
-    background: #f5f5f5;
+
     transition: transform 0.5s ease;
 }
+
+
+/* IMAGE HOVER */
 
 .project-card:hover img {
     transform: scale(1.04);
 }
 
+
+/* PROJECT OVERLAY */
+
 .project-overlay {
     position: absolute;
+
     left: 0;
     bottom: 0;
+
     width: 100%;
 
-    padding: 60px 25px 25px;
+    padding: 65px 25px 25px;
 
-    color: #fff;
+    color: #ffffff;
 
     background:
         linear-gradient(
             to top,
-            rgba(0,0,0,0.75),
-            rgba(0,0,0,0)
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0)
         );
 }
+
+
+/* PROJECT TITLE */
 
 .project-overlay h3 {
     margin: 0 0 8px;
 
-    font-size: 26px;
-    font-weight: 500;
+    font-size: 25px;
+
+    font-weight: 400;
 }
+
+
+/* VIEW PROJECT */
 
 .project-overlay span {
     display: inline-block;
 
     font-size: 13px;
+
     letter-spacing: 1.5px;
 
     opacity: 0.9;
@@ -531,9 +550,10 @@ PROJECT CARD LINK
 }
 
 
-/* =========================
+
+/* ==================================================
 PROJECT DETAIL PAGE
-========================= */
+================================================== */
 
 .project-detail {
     padding: 140px 0 100px;
@@ -541,71 +561,103 @@ PROJECT DETAIL PAGE
 
 .project-detail-header {
     max-width: 900px;
+
     margin: 0 auto 60px;
 }
 
 .project-detail-label {
     font-size: 12px;
+
     letter-spacing: 2px;
+
     text-transform: uppercase;
+
     margin-bottom: 15px;
+
     opacity: 0.6;
 }
 
 .project-detail-title {
     font-size: 48px;
+
     font-weight: 500;
+
     margin-bottom: 20px;
 }
 
 .project-detail-description {
     max-width: 700px;
+
     font-size: 17px;
+
     line-height: 1.8;
+
     color: #666;
 }
 
+
+/* PROJECT DETAIL GALLERY */
+
 .project-gallery {
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
+
     gap: 20px;
 }
 
 .project-gallery img {
     width: 100%;
+
     height: 500px;
+
     object-fit: cover;
+
     display: block;
 }
 
 .project-gallery img:first-child {
     grid-column: span 2;
+
     height: 650px;
 }
 
+
+/* PROJECT INFORMATION */
+
 .project-info {
     max-width: 900px;
+
     margin: 70px auto;
 }
 
 .project-info h2 {
     font-size: 30px;
+
     font-weight: 500;
+
     margin-bottom: 20px;
 }
 
 .project-info p {
     font-size: 16px;
+
     line-height: 1.8;
+
     color: #666;
+
+    margin-bottom: 18px;
 }
 
 .project-back {
     display: inline-block;
+
     margin-top: 30px;
 
     font-size: 13px;
+
     letter-spacing: 1.5px;
+
     text-transform: uppercase;
 }
 
@@ -613,49 +665,6 @@ PROJECT DETAIL PAGE
     opacity: 0.6;
 }
 
-
-/* =========================
-MOBILE
-========================= */
-
-@media (max-width: 768px) {
-
-    .project-card img {
-        height: 380px;
-    }
-
-    .project-overlay {
-        padding: 50px 20px 20px;
-    }
-
-    .project-overlay h3 {
-        font-size: 22px;
-    }
-
-    .project-detail {
-        padding: 110px 20px 70px;
-    }
-
-    .project-detail-title {
-        font-size: 36px;
-    }
-
-    .project-detail-description {
-        font-size: 15px;
-    }
-
-    .project-gallery {
-        grid-template-columns: 1fr;
-        gap: 12px;
-    }
-
-    .project-gallery img,
-    .project-gallery img:first-child {
-        grid-column: span 1;
-        height: 400px;
-    }
-
-}
 
 
 /* ==================================================
@@ -668,6 +677,7 @@ CONTACT
 
 .contact-grid {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
 
     gap: 25px;
@@ -685,6 +695,7 @@ CONTACT
 
 .contact-item h3 {
     font-size: 18px;
+
     font-weight: 500;
 
     margin-bottom: 10px;
@@ -693,6 +704,7 @@ CONTACT
 .contact-item p,
 .contact-item a {
     font-size: 15px;
+
     color: #555;
 }
 
@@ -714,6 +726,7 @@ FORM
 
 .inquiry-form h2 {
     font-size: 32px;
+
     font-weight: 400;
 
     margin-bottom: 10px;
@@ -727,6 +740,7 @@ FORM
 
 .form-grid {
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
 
     gap: 20px;
@@ -734,6 +748,7 @@ FORM
 
 .form-group {
     display: flex;
+
     flex-direction: column;
 
     margin-bottom: 20px;
@@ -754,6 +769,7 @@ FORM
     padding: 14px 15px;
 
     font-family: inherit;
+
     font-size: 15px;
 
     background: white;
@@ -778,6 +794,7 @@ FORM
     border: none;
 
     background: #222;
+
     color: white;
 
     padding: 15px 30px;
@@ -801,6 +818,7 @@ FOOTER
 
 .footer {
     background: #1f1f1f;
+
     color: white;
 
     padding: 55px 0 30px;
@@ -808,7 +826,9 @@ FOOTER
 
 .footer-content {
     display: flex;
+
     justify-content: space-between;
+
     align-items: flex-start;
 
     gap: 40px;
@@ -818,6 +838,7 @@ FOOTER
 
 .footer h3 {
     font-size: 21px;
+
     font-weight: 400;
 
     letter-spacing: 3px;
@@ -827,6 +848,7 @@ FOOTER
 
 .footer p {
     color: #aaa;
+
     font-size: 14px;
 }
 
@@ -840,6 +862,7 @@ FOOTER
 
 .footer-links a {
     color: #ddd;
+
     font-size: 14px;
 }
 
@@ -853,6 +876,7 @@ FOOTER
     padding-top: 25px;
 
     font-size: 13px;
+
     color: #888;
 }
 
@@ -925,6 +949,7 @@ MOBILE
 
     .hero {
         min-height: 650px;
+
         height: 90vh;
 
         padding: 0 22px;
@@ -964,6 +989,8 @@ MOBILE
     }
 
 
+    /* ABOUT */
+
     .about-grid {
         grid-template-columns: 1fr;
 
@@ -975,7 +1002,7 @@ MOBILE
     }
 
 
-    /* DESIGNER MOBILE */
+    /* DESIGNER */
 
     .designer-section {
         grid-template-columns: 1fr;
@@ -983,6 +1010,7 @@ MOBILE
         gap: 32px;
 
         margin-top: 55px;
+
         padding-top: 50px;
     }
 
@@ -992,6 +1020,7 @@ MOBILE
 
     .designer-image img {
         height: auto;
+
         max-height: none;
 
         object-fit: contain;
@@ -1014,6 +1043,8 @@ MOBILE
     }
 
 
+    /* PRODUCTS */
+
     .product-grid {
         grid-template-columns: 1fr;
 
@@ -1025,6 +1056,8 @@ MOBILE
     }
 
 
+    /* PROJECTS */
+
     .projects-grid {
         grid-template-columns: 1fr;
 
@@ -1032,9 +1065,51 @@ MOBILE
     }
 
     .project-card img {
-        height: 480px;
+        aspect-ratio: 4 / 3;
+
+        height: auto;
+
+        object-fit: cover;
     }
 
+    .project-overlay {
+        padding: 55px 20px 20px;
+    }
+
+    .project-overlay h3 {
+        font-size: 22px;
+    }
+
+
+    /* PROJECT DETAIL */
+
+    .project-detail {
+        padding: 110px 20px 70px;
+    }
+
+    .project-detail-title {
+        font-size: 36px;
+    }
+
+    .project-detail-description {
+        font-size: 15px;
+    }
+
+    .project-gallery {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .project-gallery img,
+    .project-gallery img:first-child {
+        grid-column: span 1;
+
+        height: 400px;
+    }
+
+
+    /* CONTACT */
 
     .contact-grid {
         grid-template-columns: 1fr;
@@ -1044,6 +1119,8 @@ MOBILE
         margin-bottom: 45px;
     }
 
+
+    /* FORM */
 
     .inquiry-form {
         padding: 35px 25px;
@@ -1059,6 +1136,8 @@ MOBILE
         gap: 0;
     }
 
+
+    /* FOOTER */
 
     .footer-content {
         flex-direction: column;
@@ -1107,6 +1186,7 @@ SMALL MOBILE
 
     .designer-section {
         margin-top: 45px;
+
         padding-top: 42px;
     }
 
@@ -1130,8 +1210,14 @@ SMALL MOBILE
     }
 
 
+    /* PROJECTS MOBILE */
+
     .project-card img {
-        height: 400px;
+        aspect-ratio: 4 / 3;
+
+        height: auto;
+
+        object-fit: cover;
     }
 
 
@@ -1140,3 +1226,4 @@ SMALL MOBILE
     }
 
 }
+```
