@@ -1,1705 +1,1029 @@
-```css
-/* ==================================================
-RESET
-================================================== */
+<!DOCTYPE html>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<html lang="en">
 
+<head>
 
-html {
-    scroll-behavior: smooth;
-}
+<meta charset="UTF-8">
 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body {
-    font-family: "Helvetica Neue", Arial, sans-serif;
+<!-- =========================
+SEO
+========================= -->
 
-    color: #222;
+<title>
+Custom Furniture Supplier China | CCLUX HOME
+</title>
 
-    background: #ffffff;
+<meta
+name="description"
+content="CCLUX HOME provides custom indoor and outdoor furniture for villas, apartments, hotels and resorts. European design support, bespoke furniture manufacturing, professional packaging and worldwide delivery from China."
 
-    line-height: 1.6;
-}
+>
 
+<meta
+name="keywords"
+content="custom furniture supplier China, bespoke furniture, villa furniture, hotel furniture, European furniture supplier, furniture export Europe, furniture shipping Europe, Germany furniture supplier, Spain furniture supplier, France furniture supplier"
 
-img {
-    width: 100%;
+>
 
-    display: block;
-}
+<meta
+name="robots"
+content="index, follow"
 
+>
 
-a {
-    text-decoration: none;
+<link
+rel="canonical"
+href="https://ccluxfurnishings.github.io/"
+>
 
-    color: inherit;
-}
+<!-- =========================
+CSS
+========================= -->
 
+<link
+rel="stylesheet"
+href="css/style.css"
+>
 
-.container {
-    width: 90%;
+</head>
 
-    max-width: 1200px;
+<body>
 
-    margin: 0 auto;
-}
-
-
-
-/* ==================================================
+<!-- ==================================================
 HEADER
-================================================== */
+================================================== -->
 
-.header {
-    position: absolute;
+<header class="header">
 
-    top: 0;
-    left: 0;
+<a href="#home" class="logo">
+CCLUX<br>HOME
+</a>
 
-    width: 100%;
+<nav class="nav">
 
-    height: 100px;
+<a href="#home">Home</a>
 
-    display: flex;
+<a href="#about">About</a>
 
-    align-items: center;
+<a href="#indoor">Indoor</a>
 
-    justify-content: space-between;
+<a href="#outdoor">Outdoor</a>
 
-    padding: 0 60px;
+<a href="#projects">Projects</a>
 
-    z-index: 10;
+<a href="#delivery">Delivery</a>
 
-    color: white;
-}
+<a href="#contact">Contact</a>
 
+</nav>
 
-.logo {
-    font-size: 22px;
+<a
+href="#contact"
+class="header-btn"
 
-    font-weight: 400;
+>
 
-    letter-spacing: 5px;
+Get Quote </a>
 
-    line-height: 1.2;
+</header>
 
-    color: white;
-}
+<!-- ==================================================
+HOME / HERO
+================================================== -->
 
+<section
+class="hero"
+id="home"
+>
 
-.nav {
-    display: flex;
+<div class="hero-content">
 
-    align-items: center;
+<h1>
+Custom Furniture for Villas, Apartments & Resorts
+</h1>
 
-    gap: 28px;
-}
+<p>
+European Design · Bespoke Furniture · Worldwide Delivery
+</p>
 
+<div class="buttons">
 
-.nav a {
-    color: white;
+<a
+href="#projects"
+class="btn-primary"
 
-    font-size: 14px;
+>
 
-    transition: opacity 0.3s ease;
-}
+View Projects </a>
 
+<a
+href="#contact"
+class="btn-secondary"
 
-.nav a:hover {
-    opacity: 0.7;
-}
+>
 
+Get Quote </a>
 
-.header-btn {
-    color: white;
+</div>
 
-    border: 1px solid rgba(255, 255, 255, 0.8);
+</div>
 
-    padding: 12px 26px;
+</section>
 
-    font-size: 14px;
-
-    transition: all 0.3s ease;
-}
-
-
-.header-btn:hover {
-    background: white;
-
-    color: #222;
-}
-
-
-
-/* ==================================================
-HERO
-================================================== */
-
-.hero {
-    min-height: 760px;
-
-    height: 100vh;
-
-    background-image:
-        linear-gradient(
-            rgba(0, 0, 0, 0.38),
-            rgba(0, 0, 0, 0.38)
-        ),
-        url("../assets/images/hero/hero-villa-interior.png");
-
-    background-size: cover;
-
-    background-position: center;
-
-    background-repeat: no-repeat;
-
-    display: flex;
-
-    align-items: center;
-
-    padding: 0 60px;
-}
-
-
-.hero-content {
-    max-width: 700px;
-
-    color: white;
-}
-
-
-.hero h1 {
-    font-size: 48px;
-
-    font-weight: 400;
-
-    line-height: 1.25;
-
-    margin-bottom: 20px;
-}
-
-
-.hero p {
-    font-size: 18px;
-
-    font-weight: 300;
-
-    margin-bottom: 32px;
-}
-
-
-
-/* ==================================================
-BUTTONS
-================================================== */
-
-.buttons {
-    display: flex;
-
-    gap: 16px;
-
-    flex-wrap: wrap;
-}
-
-
-.buttons a {
-    display: inline-block;
-
-    padding: 14px 28px;
-
-    font-size: 15px;
-}
-
-
-.btn-primary {
-    background: white;
-
-    color: #222;
-}
-
-
-.btn-secondary {
-    color: white;
-
-    border: 1px solid rgba(255, 255, 255, 0.8);
-}
-
-
-.btn-primary:hover {
-    opacity: 0.88;
-}
-
-
-.btn-secondary:hover {
-    background: white;
-
-    color: #222;
-}
-
-
-
-/* ==================================================
-GENERAL SECTION
-================================================== */
-
-section {
-    padding: 100px 0;
-}
-
-
-.section-title {
-    font-size: 38px;
-
-    font-weight: 400;
-
-    line-height: 1.3;
-
-    margin-bottom: 20px;
-}
-
-
-.section-text {
-    max-width: 700px;
-
-    font-size: 17px;
-
-    color: #666;
-
-    margin-bottom: 50px;
-}
-
-
-
-/* ==================================================
+<!-- ==================================================
 ABOUT
-================================================== */
+================================================== -->
 
-.about {
-    background: #f7f7f7;
-}
+<section
+class="about"
+id="about"
+>
 
+<div class="container">
 
-.about-grid {
-    display: grid;
+<h2 class="section-title">
+About CCLUX HOME
+</h2>
 
-    grid-template-columns: 1fr 1fr;
+<div class="about-grid">
 
-    gap: 70px;
+<!-- ABOUT IMAGE -->
 
-    align-items: center;
-}
+<div class="about-image">
 
+<img
+src="assets/images/hero/hero-villa-interior.png"
+alt="CCLUX HOME custom furniture and villa project"
 
-.about-image img {
-    width: 100%;
+>
 
-    height: 520px;
+</div>
 
-    object-fit: cover;
-}
+<!-- ABOUT TEXT -->
 
+<div class="about-content">
 
-.about-content h3 {
-    font-size: 28px;
+<h3>
+Bespoke Furniture Solutions
+</h3>
 
-    font-weight: 400;
+<p>
+CCLUX HOME provides custom indoor and outdoor furniture
+solutions for villas, apartments, hotels and resorts worldwide.
+</p>
 
-    margin-bottom: 20px;
-}
+<p>
+We combine European design concepts with reliable Chinese
+manufacturing to create elegant and practical furniture solutions
+for international residential and hospitality projects.
+</p>
 
+<p>
+From furniture customization and sourcing to production
+coordination and worldwide delivery, we help make every
+project simpler from concept to completion.
+</p>
 
-.about-content p {
-    font-size: 16px;
+<a
+href="#contact"
+class="text-link"
 
-    color: #555;
+>
 
-    margin-bottom: 18px;
-}
+Discuss Your Project → </a>
 
+</div>
 
-.text-link {
-    display: inline-block;
+</div>
 
-    margin-top: 10px;
+<!-- ==================================================
+DESIGN PARTNER
+================================================== -->
 
-    font-size: 15px;
+<div class="designer-section">
 
-    border-bottom: 1px solid #222;
+<!-- DESIGNER PHOTO -->
 
-    padding-bottom: 3px;
-}
+<div class="designer-image">
 
+<img
+src="assets/images/hero/manuel-gulias.png"
+alt="Manuel Gulias, Chief Design Director at CCLUX HOME"
 
+>
 
-/* ==================================================
-DESIGNER
-================================================== */
+</div>
 
-.designer-section {
-    display: grid;
+<!-- DESIGNER INFORMATION -->
 
-    grid-template-columns: 380px 1fr;
+<div class="designer-content">
 
-    gap: 70px;
+<p class="designer-label">
+DESIGN PARTNER
+</p>
 
-    align-items: center;
+<h3>
+Manuel Gulias
+</h3>
 
-    margin-top: 85px;
+<p class="designer-role">
+Chief Design Director · Spanish Architect
+</p>
 
-    padding-top: 75px;
+<p>
+Spanish architect with 7+ years of international experience,
+bringing European design expertise to bespoke residential
+and hospitality projects.
+</p>
 
-    border-top: 1px solid #dddddd;
-}
+<div class="designer-details">
 
+<span>Architecture</span>
 
-.designer-image {
-    width: 100%;
-}
+<span>Interior Design</span>
 
+<span>Furniture Design</span>
 
-.designer-image img {
-    width: 100%;
+<span>Project Coordination</span>
 
-    height: 500px;
+</div>
 
-    object-fit: cover;
+</div>
 
-    object-position: center top;
+</div>
 
-    background: #eeeeee;
-}
+</div>
 
+</section>
 
-.designer-content {
-    max-width: 650px;
-}
+<!-- ==================================================
+INDOOR FURNITURE
+================================================== -->
 
+<section
+class="products"
+id="indoor"
+>
 
-.designer-label {
-    font-size: 12px;
+<div class="container">
 
-    letter-spacing: 2.5px;
+<h2 class="section-title">
+Indoor Furniture
+</h2>
 
-    color: #888888;
+<p class="section-text">
+Custom furniture for comfortable and elegant interiors.
+</p>
 
-    margin-bottom: 12px;
-}
+<div class="product-grid">
 
+<!-- SOFA -->
 
-.designer-content h3 {
-    font-size: 34px;
+<div class="product-card">
 
-    font-weight: 400;
+<img
+src="assets/images/hero/Indoor/sofa1.png"
+alt="Custom sofa furniture by CCLUX HOME"
 
-    line-height: 1.25;
+>
 
-    margin-bottom: 6px;
-}
+<div class="product-info">
 
+<h3>
+Custom Sofas
+</h3>
 
-.designer-role {
-    font-size: 17px !important;
+</div>
 
-    color: #777777 !important;
+</div>
 
-    margin-bottom: 26px !important;
-}
+<!-- DINING -->
 
+<div class="product-card">
 
-.designer-content p {
-    font-size: 16px;
+<img
+src="assets/images/hero/Indoor/dining3.png"
+alt="Custom dining furniture by CCLUX HOME"
 
-    color: #555555;
+>
 
-    line-height: 1.8;
+<div class="product-info">
 
-    margin-bottom: 18px;
-}
+<h3>
+Dining Furniture
+</h3>
 
+</div>
 
-.designer-details {
-    display: flex;
+</div>
 
-    flex-wrap: wrap;
+<!-- BED -->
 
-    gap: 10px;
+<div class="product-card">
 
-    margin-top: 28px;
-}
+<img
+src="assets/images/hero/Indoor/indoorbed4.png"
+alt="Custom bedroom furniture by CCLUX HOME"
 
+>
 
-.designer-details span {
-    display: inline-block;
+<div class="product-info">
 
-    padding: 8px 14px;
+<h3>
+Custom Beds
+</h3>
 
-    border: 1px solid #d7d7d7;
+</div>
 
-    font-size: 13px;
+</div>
 
-    color: #555555;
+<!-- CABINET -->
 
-    background: #ffffff;
-}
+<div class="product-card">
 
+<img
+src="assets/images/hero/Indoor/lockers.png"
+alt="Custom cabinets and storage furniture by CCLUX HOME"
 
+>
 
-/* ==================================================
-PRODUCTS
-================================================== */
+<div class="product-info">
 
-.products {
-    background: white;
-}
+<h3>
+Cabinets & Storage
+</h3>
 
+</div>
 
-.outdoor {
-    background: #f7f7f7;
-}
+</div>
 
+</div>
 
-.product-grid {
-    display: grid;
+</div>
 
-    grid-template-columns: repeat(2, 1fr);
+</section>
 
-    gap: 35px;
-}
+<!-- ==================================================
+OUTDOOR FURNITURE
+================================================== -->
 
+<section
+class="products outdoor"
+id="outdoor"
+>
 
-.product-card {
-    background: white;
+<div class="container">
 
-    overflow: hidden;
-}
+<h2 class="section-title">
+Outdoor Furniture
+</h2>
 
+<p class="section-text">
+Outdoor furniture for villas, terraces, hotels and resorts.
+</p>
 
-.product-card img {
-    width: 100%;
+<div class="product-grid">
 
-    height: 440px;
+<!-- OUTDOOR SOFA -->
 
-    object-fit: cover;
+<div class="product-card">
 
-    transition: transform 0.4s ease;
-}
+<img
+src="assets/images/hero/Outdoor/outdoor5.png"
+alt="Custom outdoor sofa by CCLUX HOME"
 
+>
 
-.product-card:hover img {
-    transform: scale(1.02);
-}
+<div class="product-info">
 
+<h3>
+Outdoor Sofas
+</h3>
 
-.product-info {
-    padding: 18px 0 5px;
-}
+</div>
 
+</div>
 
-.product-info h3 {
-    font-size: 21px;
+<!-- OUTDOOR DINING -->
 
-    font-weight: 400;
-}
+<div class="product-card">
 
+<img
+src="assets/images/hero/Outdoor/outdoor 6.png"
+alt="Outdoor dining furniture by CCLUX HOME"
 
+>
 
-/* ==================================================
+<div class="product-info">
+
+<h3>
+Dining Sets
+</h3>
+
+</div>
+
+</div>
+
+<!-- SUN LOUNGER -->
+
+<div class="product-card">
+
+<img
+src="assets/images/hero/Outdoor/outdoor9.png"
+alt="Outdoor sun loungers by CCLUX HOME"
+
+>
+
+<div class="product-info">
+
+<h3>
+Sun Loungers
+</h3>
+
+</div>
+
+</div>
+
+<!-- OUTDOOR RUG -->
+
+<div class="product-card">
+
+<img
+src="assets/images/hero/Outdoor/lay1.png"
+alt="Outdoor rug by CCLUX HOME"
+
+>
+
+<div class="product-info">
+
+<h3>
+Outdoor Rugs
+</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==================================================
 PROJECTS
-================================================== */
+================================================== -->
 
-.projects {
-    background: white;
-}
+<section
+class="projects"
+id="projects"
+>
 
+<div class="container">
 
-.projects-grid {
-    display: grid;
+<h2 class="section-title">
+Selected Projects
+</h2>
 
-    grid-template-columns: repeat(3, 1fr);
+<p class="section-text">
+Furniture solutions for residential and hospitality projects.
+</p>
 
-    gap: 25px;
-}
+<div class="projects-grid">
 
+<!-- VILLA -->
 
-.project-card {
-    position: relative;
+<a
+href="projects/villa.html"
+class="project-card"
 
-    display: block;
+>
 
-    overflow: hidden;
+<img
+src="assets/images/hero/Projects/pjj002.png"
+alt="Luxury villa furniture project by CCLUX HOME"
 
-    text-decoration: none;
+>
 
-    color: inherit;
+<div class="project-overlay">
 
-    cursor: pointer;
+<h3>
+Villa
+</h3>
 
-    background: #f5f5f5;
-}
+<span>
+View Project →
+</span>
 
+</div>
 
-.project-card img {
-    width: 100%;
+</a>
 
-    height: 460px;
+<!-- APARTMENT -->
 
-    object-fit: cover;
+<a
+href="projects/apartment.html"
+class="project-card"
 
-    display: block;
+>
 
-    transition: transform 0.5s ease;
-}
+<img
+src="assets/images/hero/Projects/pjj004.png"
+alt="Apartment furniture project by CCLUX HOME"
 
+>
 
-.project-card:hover img {
-    transform: scale(1.04);
-}
+<div class="project-overlay">
 
+<h3>
+Apartment
+</h3>
 
-.project-overlay {
-    position: absolute;
+<span>
+View Project →
+</span>
 
-    left: 0;
+</div>
 
-    bottom: 0;
+</a>
 
-    width: 100%;
+<!-- HOSPITALITY -->
 
-    padding: 65px 25px 25px;
+<a
+href="projects/hospitality.html"
+class="project-card"
 
-    color: #fff;
+>
 
-    background:
-        linear-gradient(
-            to top,
-            rgba(0, 0, 0, 0.75),
-            rgba(0, 0, 0, 0)
-        );
-}
+<img
+src="assets/images/hero/Projects/pjj003.png"
+alt="Hotel and resort furniture project by CCLUX HOME"
 
+>
 
-.project-overlay h3 {
-    margin: 0 0 8px;
+<div class="project-overlay">
 
-    font-size: 26px;
+<h3>
+Hospitality
+</h3>
 
-    font-weight: 400;
-}
+<span>
+View Project →
+</span>
 
+</div>
 
-.project-overlay span {
-    display: inline-block;
+</a>
 
-    font-size: 13px;
+</div>
 
-    letter-spacing: 1.5px;
+</div>
 
-    opacity: 0.9;
+</section>
 
-    transition: transform 0.3s ease;
-}
+<!-- ==================================================
+PACKAGING & EUROPEAN DELIVERY
+================================================== -->
 
+<section
+class="delivery"
+id="delivery"
+>
 
-.project-card:hover .project-overlay span {
-    transform: translateX(5px);
-}
+<div class="container">
 
+<div class="delivery-header">
 
+<p class="delivery-label">
+FROM FACTORY TO DESTINATION
+</p>
 
-/* ==================================================
-LOGISTICS
-================================================== */
+<h2 class="section-title">
+Professional Packaging & European Delivery
+</h2>
 
-.logistics {
-    background: #f5f5f3;
-}
+<p class="section-text">
+We provide professional furniture packaging and international
+shipping support to help deliver your order safely from China
+to Europe and other global destinations.
+</p>
 
+</div>
 
-.logistics-header {
-    max-width: 850px;
+<!-- DELIVERY STEPS -->
 
-    margin-bottom: 60px;
-}
+<div class="delivery-grid">
 
+<!-- STEP 01 -->
 
-.logistics-label {
-    font-size: 12px;
+<div class="delivery-card">
 
-    letter-spacing: 2.5px;
+<div class="delivery-number">
+01
+</div>
 
-    color: #888;
+<h3>
+Professional Packaging
+</h3>
 
-    margin-bottom: 12px;
-}
+<p>
+Each furniture item is carefully protected with suitable
+materials according to its size, structure and destination.
+</p>
 
+</div>
 
+<!-- STEP 02 -->
 
-/* ==================================================
-PACKING SHOWCASE
-================================================== */
+<div class="delivery-card">
 
-.packing-showcase {
-    display: grid;
+<div class="delivery-number">
+02
+</div>
 
-    grid-template-columns: 1fr 1fr 1fr;
+<h3>
+CCLUX HOME Branding
+</h3>
 
-    gap: 20px;
+<p>
+Packaging can be customized with the
+<strong>CCLUX HOME</strong> logo and project information,
+creating a professional presentation throughout the delivery process.
+</p>
 
-    margin-bottom: 70px;
-}
+</div>
 
+<!-- STEP 03 -->
 
-.packing-box {
-    min-height: 340px;
+<div class="delivery-card">
 
-    background:
-        linear-gradient(
-            135deg,
-            #ddd8cf,
-            #c8c1b5
-        );
+<div class="delivery-number">
+03
+</div>
 
-    border: 1px solid #c7c0b5;
+<h3>
+Export Preparation
+</h3>
 
-    position: relative;
+<p>
+We coordinate packing, labeling, loading and export preparation
+to make the shipping process more organized and efficient.
+</p>
 
-    padding: 35px;
+</div>
 
-    display: flex;
+<!-- STEP 04 -->
 
-    flex-direction: column;
+<div class="delivery-card">
 
-    justify-content: space-between;
+<div class="delivery-number">
+04
+</div>
 
-    overflow: hidden;
-}
+<h3>
+European Delivery
+</h3>
 
+<p>
+We support international furniture delivery to multiple European
+markets, including Germany, Spain, France and other destinations.
+</p>
 
-/* BOX STRIPES */
+</div>
 
-.packing-box::before {
-    content: "";
+</div>
 
-    position: absolute;
+<!-- DELIVERY HIGHLIGHT -->
 
-    top: 0;
-    left: 0;
+<div class="delivery-highlight">
 
-    width: 100%;
+<div class="delivery-highlight-logo">
+CCLUX<br>HOME
+</div>
 
-    height: 10px;
+<div class="delivery-highlight-content">
 
-    background: #222;
-}
+<h3>
+One Furniture Solution · From China to Europe
+</h3>
 
+<p>
+Furniture customization, professional packaging,
+export coordination and international delivery —
+all managed through one reliable supply chain.
+</p>
 
-.packing-box::after {
-    content: "";
+<div class="delivery-countries">
 
-    position: absolute;
+<span>Germany</span>
 
-    right: -60px;
-    bottom: -60px;
+<span>Spain</span>
 
-    width: 180px;
-    height: 180px;
+<span>France</span>
 
-    border: 1px solid rgba(0,0,0,0.18);
+<span>Italy</span>
 
-    transform: rotate(45deg);
-}
+<span>Netherlands</span>
 
+<span>Belgium</span>
 
-.packing-logo {
-    font-size: 30px;
+<span>Austria</span>
 
-    letter-spacing: 5px;
+<span>Other European Markets</span>
 
-    font-weight: 500;
+</div>
 
-    color: #222;
+</div>
 
-    position: relative;
+</div>
 
-    z-index: 2;
-}
+</div>
 
+</section>
 
-.packing-logo span {
-    display: block;
-
-    font-size: 15px;
-
-    letter-spacing: 5px;
-
-    margin-top: 2px;
-}
-
-
-.packing-line {
-    font-size: 12px;
-
-    letter-spacing: 2px;
-
-    color: #444;
-
-    position: relative;
-
-    z-index: 2;
-}
-
-
-.packing-mark {
-    display: inline-block;
-
-    width: fit-content;
-
-    padding: 7px 12px;
-
-    border: 1px solid rgba(0,0,0,0.35);
-
-    font-size: 10px;
-
-    letter-spacing: 1.5px;
-
-    color: #444;
-
-    position: relative;
-
-    z-index: 2;
-}
-
-
-/* SECOND BOX */
-
-.packing-box.small-box {
-    background:
-        linear-gradient(
-            135deg,
-            #e5e2dc,
-            #d2cec5
-        );
-}
-
-
-.packing-box.small-box .packing-logo {
-    margin-top: 5px;
-}
-
-
-.packing-info-box {
-    background: #222;
-
-    color: white;
-
-    min-height: 340px;
-
-    padding: 45px 40px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-}
-
-
-.packing-small-title {
-    font-size: 11px;
-
-    letter-spacing: 2.5px;
-
-    color: #aaa;
-
-    margin-bottom: 18px;
-}
-
-
-.packing-info-box h3 {
-    font-size: 32px;
-
-    line-height: 1.3;
-
-    font-weight: 400;
-
-    margin-bottom: 20px;
-}
-
-
-.packing-info-box p:last-child {
-    font-size: 15px;
-
-    line-height: 1.8;
-
-    color: #bbb;
-
-    max-width: 420px;
-}
-
-
-
-/* ==================================================
-LOGISTICS STEPS
-================================================== */
-
-.logistics-grid {
-    display: grid;
-
-    grid-template-columns: repeat(4, 1fr);
-
-    gap: 25px;
-
-    margin-bottom: 65px;
-}
-
-
-.logistics-step {
-    border-top: 1px solid #cfcfcf;
-
-    padding-top: 25px;
-}
-
-
-.step-number {
-    display: block;
-
-    font-size: 13px;
-
-    letter-spacing: 2px;
-
-    color: #888;
-
-    margin-bottom: 18px;
-}
-
-
-.logistics-step h3 {
-    font-size: 21px;
-
-    font-weight: 400;
-
-    margin-bottom: 14px;
-}
-
-
-.logistics-step p {
-    font-size: 14px;
-
-    line-height: 1.8;
-
-    color: #666;
-}
-
-
-
-/* ==================================================
-EUROPE MARKETS
-================================================== */
-
-.europe-markets {
-    border-top: 1px solid #d3d3d3;
-
-    border-bottom: 1px solid #d3d3d3;
-
-    padding: 30px 0;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 30px;
-}
-
-
-.markets-label {
-    font-size: 11px;
-
-    letter-spacing: 2px;
-
-    color: #888;
-
-    white-space: nowrap;
-}
-
-
-.market-list {
-    display: flex;
-
-    flex-wrap: wrap;
-
-    justify-content: flex-end;
-
-    gap: 10px;
-}
-
-
-.market-list span {
-    padding: 8px 13px;
-
-    border: 1px solid #d1d1d1;
-
-    background: #ffffff;
-
-    font-size: 12px;
-
-    color: #555;
-}
-
-
-
-/* ==================================================
-LOGISTICS CTA
-================================================== */
-
-.logistics-cta {
-    margin-top: 65px;
-
-    max-width: 850px;
-}
-
-
-.logistics-cta h3 {
-    font-size: 30px;
-
-    font-weight: 400;
-
-    margin-bottom: 12px;
-}
-
-
-.logistics-cta p {
-    font-size: 16px;
-
-    color: #666;
-
-    margin-bottom: 25px;
-
-    max-width: 700px;
-}
-
-
-.logistics-btn {
-    display: inline-block;
-
-    background: #222;
-
-    color: white;
-
-    padding: 14px 25px;
-
-    font-size: 14px;
-
-    transition: opacity 0.3s ease;
-}
-
-
-.logistics-btn:hover {
-    opacity: 0.8;
-}
-
-
-
-/* ==================================================
+<!-- ==================================================
 CONTACT
-================================================== */
+================================================== -->
 
-.contact {
-    background: #f7f7f7;
-}
+<section
+class="contact"
+id="contact"
+>
 
+<div class="container">
 
-.contact-grid {
-    display: grid;
+<h2 class="section-title">
+Start Your Project
+</h2>
 
-    grid-template-columns: repeat(3, 1fr);
+<p class="section-text">
+Send us your drawings, reference images or furniture list.
+We will help you find the right furniture solution for your project.
+</p>
 
-    gap: 25px;
+<div class="contact-grid">
 
-    margin-bottom: 70px;
-}
+<!-- EMAIL -->
 
+<div class="contact-item">
 
-.contact-item {
-    background: white;
+<h3>
+Email
+</h3>
 
-    padding: 30px;
+<a href="mailto:ccluxhome@gmail.com">
+ccluxhome@gmail.com
+</a>
 
-    min-height: 130px;
-}
+</div>
 
+<!-- WHATSAPP -->
 
-.contact-item h3 {
-    font-size: 18px;
+<div class="contact-item">
 
-    font-weight: 500;
+<h3>
+WhatsApp
+</h3>
 
-    margin-bottom: 10px;
-}
+<a
+href="https://wa.me/8618126791433"
+target="_blank"
+rel="noopener noreferrer"
 
+>
 
-.contact-item p,
-.contact-item a {
-    font-size: 15px;
++86 181 2679 1433 </a>
 
-    color: #555;
-}
+</div>
 
+<!-- LOCATION -->
 
+<div class="contact-item">
 
-/* ==================================================
-FORM
-================================================== */
+<h3>
+Location
+</h3>
 
-.inquiry-form {
-    max-width: 900px;
+<p>
+Foshan, China
+</p>
 
-    margin: 0 auto;
+</div>
 
-    background: white;
+</div>
 
-    padding: 55px;
-}
+<!-- ==================================================
+CONTACT FORM
+================================================== -->
 
+<div class="inquiry-form">
 
-.inquiry-form h2 {
-    font-size: 32px;
+<h2>
+Tell Us About Your Project
+</h2>
 
-    font-weight: 400;
+<p>
+Leave your information and we will contact you.
+</p>
 
-    margin-bottom: 10px;
-}
+<form
+action="https://formsubmit.co/ccluxhome@gmail.com"
+method="POST"
+>
 
+<input
+type="hidden"
+name="_subject"
+value="New CCLUX HOME Inquiry"
 
-.inquiry-form > p {
-    color: #666;
+>
 
-    margin-bottom: 35px;
-}
+<input
+type="hidden"
+name="_captcha"
+value="false"
 
+>
 
-.form-grid {
-    display: grid;
+<div class="form-grid">
 
-    grid-template-columns: repeat(2, 1fr);
+<!-- NAME -->
 
-    gap: 20px;
-}
+<div class="form-group">
 
+<label for="name">
+Name *
+</label>
 
-.form-group {
-    display: flex;
+<input
+type="text"
+id="name"
+name="Name"
+placeholder="Your name"
+required
 
-    flex-direction: column;
+>
 
-    margin-bottom: 20px;
-}
+</div>
 
+<!-- EMAIL -->
 
-.form-group label {
-    font-size: 14px;
+<div class="form-group">
 
-    margin-bottom: 8px;
-}
+<label for="email">
+Email *
+</label>
 
+<input
+type="email"
+id="email"
+name="Email"
+placeholder="Your email"
+required
 
-.form-group input,
-.form-group textarea {
-    width: 100%;
+>
 
-    border: 1px solid #d8d8d8;
+</div>
 
-    padding: 14px 15px;
+<!-- WHATSAPP -->
 
-    font-family: inherit;
+<div class="form-group">
 
-    font-size: 15px;
+<label for="whatsapp">
+WhatsApp
+</label>
 
-    background: white;
-}
+<input
+type="text"
+id="whatsapp"
+name="WhatsApp"
+placeholder="Your WhatsApp number"
 
+>
 
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
+</div>
 
-    border-color: #777;
-}
+<!-- COUNTRY -->
 
+<div class="form-group">
 
-.form-group textarea {
-    resize: vertical;
-}
+<label for="country">
+Country
+</label>
 
+<input
+type="text"
+id="country"
+name="Country"
+placeholder="Your country"
 
-.full-width {
-    width: 100%;
-}
+>
 
+</div>
 
-.submit-btn {
-    border: none;
+</div>
 
-    background: #222;
+<!-- PROJECT DETAILS -->
 
-    color: white;
+<div class="form-group full-width">
 
-    padding: 15px 30px;
+<label for="message">
+Project Details *
+</label>
 
-    font-size: 15px;
+<textarea
+id="message"
+name="Project Details"
+rows="5"
+placeholder="Tell us what furniture you need..."
+required
+></textarea>
 
-    cursor: pointer;
+</div>
 
-    transition: opacity 0.3s ease;
-}
+<button
+type="submit"
+class="submit-btn"
 
+>
 
-.submit-btn:hover {
-    opacity: 0.8;
-}
+Send Inquiry </button>
 
+</form>
 
+</div>
 
-/* ==================================================
+</div>
+
+</section>
+
+<!-- ==================================================
 FOOTER
-================================================== */
+================================================== -->
 
-.footer {
-    background: #1f1f1f;
+<footer class="footer">
 
-    color: white;
+<div class="container">
 
-    padding: 55px 0 30px;
-}
+<div class="footer-content">
 
+<div>
 
-.footer-content {
-    display: flex;
+<h3>
+CCLUX HOME
+</h3>
 
-    justify-content: space-between;
+<p>
+Custom Furniture · European Design · Packaging · Worldwide Delivery
+</p>
 
-    align-items: flex-start;
+</div>
 
-    gap: 40px;
+<div class="footer-links">
 
-    margin-bottom: 40px;
-}
+<a href="#home">
+Home
+</a>
 
+<a href="#about">
+About
+</a>
 
-.footer h3 {
-    font-size: 21px;
+<a href="#indoor">
+Indoor
+</a>
 
-    font-weight: 400;
+<a href="#outdoor">
+Outdoor
+</a>
 
-    letter-spacing: 3px;
+<a href="#projects">
+Projects
+</a>
 
-    margin-bottom: 8px;
-}
+<a href="#delivery">
+Delivery
+</a>
 
+<a href="#contact">
+Contact
+</a>
 
-.footer p {
-    color: #aaa;
+</div>
 
-    font-size: 14px;
-}
+</div>
 
+<p class="copyright">
+© 2026 CCLUX HOME. All Rights Reserved.
+</p>
 
-.footer-links {
-    display: flex;
+</div>
 
-    gap: 22px;
+</footer>
 
-    flex-wrap: wrap;
-}
+</body>
 
-
-.footer-links a {
-    color: #ddd;
-
-    font-size: 14px;
-}
-
-
-.footer-links a:hover {
-    color: white;
-}
-
-
-.copyright {
-    border-top: 1px solid #333;
-
-    padding-top: 25px;
-
-    font-size: 13px;
-
-    color: #888;
-}
-
-
-
-/* ==================================================
-TABLET
-================================================== */
-
-@media (max-width: 1100px) {
-
-
-    .header {
-        padding: 0 35px;
-    }
-
-
-    .hero {
-        padding: 0 35px;
-    }
-
-
-    .nav {
-        gap: 18px;
-    }
-
-
-    .nav a {
-        font-size: 13px;
-    }
-
-
-    .about-grid {
-        gap: 40px;
-    }
-
-
-    .designer-section {
-        grid-template-columns: 340px 1fr;
-
-        gap: 45px;
-    }
-
-
-    .designer-image img {
-        height: 460px;
-    }
-
-
-    .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-    .packing-showcase {
-        grid-template-columns: 1fr 1fr;
-    }
-
-
-    .packing-info-box {
-        grid-column: span 2;
-    }
-
-
-    .logistics-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-}
-
-
-
-/* ==================================================
-MOBILE
-================================================== */
-
-@media (max-width: 850px) {
-
-
-    .header {
-        height: 85px;
-
-        padding: 0 22px;
-    }
-
-
-    .logo {
-        font-size: 18px;
-
-        letter-spacing: 4px;
-    }
-
-
-    .nav {
-        display: none;
-    }
-
-
-    .header-btn {
-        padding: 10px 18px;
-
-        font-size: 13px;
-    }
-
-
-
-    /* HERO */
-
-    .hero {
-        min-height: 650px;
-
-        height: 90vh;
-
-        padding: 0 22px;
-
-        background-position: center;
-    }
-
-
-    .hero-content {
-        max-width: 520px;
-    }
-
-
-    .hero h1 {
-        font-size: 36px;
-    }
-
-
-    .hero p {
-        font-size: 16px;
-    }
-
-
-
-    /* GENERAL */
-
-    section {
-        padding: 75px 0;
-    }
-
-
-    .container {
-        width: 88%;
-    }
-
-
-    .section-title {
-        font-size: 31px;
-    }
-
-
-    .section-text {
-        font-size: 16px;
-
-        margin-bottom: 35px;
-    }
-
-
-
-    /* ABOUT */
-
-    .about-grid {
-        grid-template-columns: 1fr;
-
-        gap: 35px;
-    }
-
-
-    .about-image img {
-        height: 420px;
-    }
-
-
-
-    /* DESIGNER */
-
-    .designer-section {
-        grid-template-columns: 1fr;
-
-        gap: 32px;
-
-        margin-top: 55px;
-
-        padding-top: 50px;
-    }
-
-
-    .designer-image {
-        max-width: 460px;
-    }
-
-
-    .designer-image img {
-        height: auto;
-
-        object-fit: contain;
-    }
-
-
-    .designer-content {
-        max-width: 100%;
-    }
-
-
-    .designer-content h3 {
-        font-size: 28px;
-    }
-
-
-    .designer-role {
-        font-size: 16px !important;
-    }
-
-
-    .designer-content p {
-        font-size: 15px;
-    }
-
-
-
-    /* PRODUCTS */
-
-    .product-grid {
-        grid-template-columns: 1fr;
-
-        gap: 30px;
-    }
-
-
-    .product-card img {
-        height: 420px;
-    }
-
-
-
-    /* PROJECTS */
-
-    .projects-grid {
-        grid-template-columns: 1fr;
-
-        gap: 25px;
-    }
-
-
-    .project-card img {
-        height: 480px;
-    }
-
-
-
-    /* LOGISTICS */
-
-    .packing-showcase {
-        grid-template-columns: 1fr;
-
-        gap: 15px;
-
-        margin-bottom: 50px;
-    }
-
-
-    .packing-box {
-        min-height: 300px;
-    }
-
-
-    .packing-info-box {
-        grid-column: span 1;
-
-        min-height: 300px;
-
-        padding: 35px 28px;
-    }
-
-
-    .packing-info-box h3 {
-        font-size: 28px;
-    }
-
-
-    .logistics-grid {
-        grid-template-columns: 1fr;
-
-        gap: 35px;
-
-        margin-bottom: 50px;
-    }
-
-
-    .europe-markets {
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 20px;
-    }
-
-
-    .market-list {
-        justify-content: flex-start;
-    }
-
-
-    .logistics-cta {
-        margin-top: 50px;
-    }
-
-
-
-    /* CONTACT */
-
-    .contact-grid {
-        grid-template-columns: 1fr;
-
-        gap: 15px;
-
-        margin-bottom: 45px;
-    }
-
-
-    .inquiry-form {
-        padding: 35px 25px;
-    }
-
-
-    .inquiry-form h2 {
-        font-size: 28px;
-    }
-
-
-    .form-grid {
-        grid-template-columns: 1fr;
-
-        gap: 0;
-    }
-
-
-
-    /* FOOTER */
-
-    .footer-content {
-        flex-direction: column;
-    }
-
-}
-
-
-
-/* ==================================================
-SMALL MOBILE
-================================================== */
-
-@media (max-width: 500px) {
-
-
-    .hero h1 {
-        font-size: 31px;
-    }
-
-
-    .hero p {
-        font-size: 15px;
-    }
-
-
-    .buttons {
-        flex-direction: column;
-
-        align-items: flex-start;
-    }
-
-
-    .buttons a {
-        text-align: center;
-
-        min-width: 150px;
-    }
-
-
-    .section-title {
-        font-size: 28px;
-    }
-
-
-    .about-image img {
-        height: 330px;
-    }
-
-
-    .designer-section {
-        margin-top: 45px;
-
-        padding-top: 42px;
-    }
-
-
-    .designer-content h3 {
-        font-size: 26px;
-    }
-
-
-    .designer-details {
-        gap: 8px;
-    }
-
-
-    .designer-details span {
-        font-size: 12px;
-
-        padding: 7px 11px;
-    }
-
-
-    .product-card img {
-        height: 340px;
-    }
-
-
-    .project-card img {
-        height: 400px;
-    }
-
-
-    .packing-box {
-        min-height: 260px;
-
-        padding: 28px;
-    }
-
-
-    .packing-info-box {
-        min-height: 260px;
-
-        padding: 30px 25px;
-    }
-
-
-    .packing-logo {
-        font-size: 25px;
-    }
-
-
-    .packing-info-box h3 {
-        font-size: 25px;
-    }
-
-
-    .market-list span {
-        font-size: 11px;
-
-        padding: 7px 10px;
-    }
-
-
-    .logistics-cta h3 {
-        font-size: 25px;
-    }
-
-
-    .inquiry-form {
-        padding: 30px 20px;
-    }
-
-}
-```
+</html>
