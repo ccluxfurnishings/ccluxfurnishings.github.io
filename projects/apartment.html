@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -14,10 +15,216 @@ name="description"
 content="Bespoke apartment furniture project by CCLUX HOME, combining European design and customized furniture manufacturing."
 >
 
-<link
-rel="stylesheet"
-href="../css/style.css"
->
+<link rel="stylesheet" href="../css/style.css">
+
+<style>
+
+/* ==================================================
+PROJECT DETAIL
+================================================== */
+
+.project-detail {
+    padding: 150px 0 100px;
+    background: #ffffff;
+}
+
+.project-detail-header {
+    max-width: 850px;
+    margin-bottom: 60px;
+}
+
+.project-detail-label {
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    color: #888;
+    margin-bottom: 14px;
+}
+
+.project-detail-title {
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.project-detail-description {
+    max-width: 780px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #666;
+}
+
+
+/* ==================================================
+PROJECT GALLERY
+================================================== */
+
+/*
+第一行：
+
+ap010
+占满整行
+
+下面：
+
+ap02 + ap03
+ap04 + ap06
+ap08 + ap09
+*/
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+}
+
+
+/* ==================================================
+第一张大图
+================================================== */
+
+.gallery-main {
+    grid-column: 1 / -1;
+    width: 100%;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.gallery-main img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+
+/* ==================================================
+下面六张图片
+================================================== */
+
+.gallery-item {
+    width: 100%;
+    overflow: hidden;
+    background: #f5f5f5;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.02);
+}
+
+
+/* ==================================================
+PROJECT INFORMATION
+================================================== */
+
+.project-info {
+    max-width: 850px;
+    margin-top: 80px;
+    padding-top: 60px;
+    border-top: 1px solid #dddddd;
+}
+
+.project-info h2 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+
+.project-info p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 18px;
+}
+
+.project-back {
+    display: inline-block;
+    margin-top: 22px;
+    font-size: 15px;
+    border-bottom: 1px solid #222;
+    padding-bottom: 4px;
+    transition: opacity 0.3s ease;
+}
+
+.project-back:hover {
+    opacity: 0.6;
+}
+
+
+/* ==================================================
+MOBILE
+================================================== */
+
+@media (max-width: 700px) {
+
+    .project-detail {
+        padding: 120px 0 70px;
+    }
+
+    .project-detail-header {
+        margin-bottom: 40px;
+    }
+
+    .project-detail-title {
+        font-size: 38px;
+    }
+
+    .project-detail-description {
+        font-size: 15px;
+    }
+
+    .project-gallery {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .gallery-main {
+        grid-column: 1;
+    }
+
+    .gallery-item {
+        width: 100%;
+    }
+
+    .project-info {
+        margin-top: 55px;
+        padding-top: 45px;
+    }
+
+    .project-info h2 {
+        font-size: 28px;
+    }
+
+}
+
+
+/* ==================================================
+SMALL MOBILE
+================================================== */
+
+@media (max-width: 500px) {
+
+    .project-detail-title {
+        font-size: 32px;
+    }
+
+    .project-detail-description {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+}
+
+</style>
 
 </head>
 
@@ -25,41 +232,32 @@ href="../css/style.css"
 <body>
 
 
+<!-- ==================================================
+HEADER
+================================================== -->
+
 <header class="header">
 
-<a
-href="../index.html"
-class="logo"
->
+<a href="../index.html" class="logo">
 CCLUX<br>HOME
 </a>
 
 
 <nav class="nav">
 
-<a href="../index.html#home">
-Home
-</a>
+<a href="../index.html#home">Home</a>
 
-<a href="../index.html#about">
-About
-</a>
+<a href="../index.html#about">About</a>
 
-<a href="../index.html#indoor">
-Indoor
-</a>
+<a href="../index.html#indoor">Indoor</a>
 
-<a href="../index.html#outdoor">
-Outdoor
-</a>
+<a href="../index.html#outdoor">Outdoor</a>
 
-<a href="../index.html#projects">
-Projects
-</a>
+<a href="../index.html#projects">Projects</a>
 
-<a href="../index.html#contact">
-Contact
-</a>
+<a href="../index.html#delivery">Delivery</a>
+
+<a href="../index.html#contact">Contact</a>
 
 </nav>
 
@@ -68,17 +266,26 @@ Contact
 href="../index.html#contact"
 class="header-btn"
 >
+
 Get Quote
+
 </a>
 
 </header>
 
 
+<!-- ==================================================
+PROJECT DETAIL
+================================================== -->
 
 <section class="project-detail">
 
 <div class="container">
 
+
+<!-- ==================================================
+PROJECT HEADER
+================================================== -->
 
 <div class="project-detail-header">
 
@@ -103,58 +310,107 @@ refined European aesthetics.
 </div>
 
 
+<!-- ==================================================
+7 IMAGE PROJECT GALLERY
+================================================== -->
 
 <div class="project-gallery">
 
 
+<!-- ==================================================
+ROW 1 — LARGE IMAGE
+================================================== -->
+
+<div class="gallery-main">
+
 <img
 src="../assets/images/hero/Projects/ap03.png"
-alt="Luxury apartment interior"
+alt="Luxury apartment interior by CCLUX HOME"
 >
 
+</div>
+
+
+<!-- ==================================================
+ROW 2
+================================================== -->
+
+<div class="gallery-item">
 
 <img
 src="../assets/images/hero/Projects/ap04.png"
 alt="Apartment living room furniture"
 >
 
+</div>
+
+
+<div class="gallery-item">
 
 <img
 src="../assets/images/hero/Projects/ap06.png"
 alt="Custom apartment furniture"
 >
 
+</div>
+
+
+<!-- ==================================================
+ROW 3
+================================================== -->
+
+<div class="gallery-item">
 
 <img
 src="../assets/images/hero/Projects/ap08.png"
 alt="Apartment interior design"
 >
 
+</div>
+
+
+<div class="gallery-item">
 
 <img
 src="../assets/images/hero/Projects/ap010.png"
-alt="Bespoke apartment furniture"
+alt="Apartment dining and living furniture"
 >
 
+</div>
+
+
+<!-- ==================================================
+ROW 4
+================================================== -->
+
+<div class="gallery-item">
 
 <img
 src="../assets/images/hero/Projects/ap02.png"
-alt="Modern apartment furniture"
+alt="Apartment bedroom furniture"
 >
 
+</div>
+
+
+<div class="gallery-item">
 
 <img
 src="../assets/images/hero/Projects/ap09.png"
-alt="European style apartment furniture"
+alt="Apartment custom furniture"
 >
+
+</div>
 
 
 </div>
 
 
+<!-- ==================================================
+PROJECT INFORMATION
+================================================== -->
 
 <div class="project-info">
-
 
 <h2>
 Bespoke Furniture Solutions
@@ -184,9 +440,10 @@ from concept to completion.
 href="../index.html#projects"
 class="project-back"
 >
-← Back to Projects
-</a>
 
+← Back to Projects
+
+</a>
 
 </div>
 
@@ -196,14 +453,81 @@ class="project-back"
 </section>
 
 
+<!-- ==================================================
+FOOTER
+================================================== -->
 
 <footer class="footer">
 
 <div class="container">
 
+
+<div class="footer-content">
+
+
+<div>
+
+<h3>
+CCLUX HOME
+</h3>
+
+
 <p>
-© 2026 CCLUX HOME. All Rights Reserved.
+Custom Furniture · European Design · Worldwide Delivery
 </p>
+
+</div>
+
+
+<div class="footer-links">
+
+
+<a href="../index.html#home">
+Home
+</a>
+
+
+<a href="../index.html#about">
+About
+</a>
+
+
+<a href="../index.html#indoor">
+Indoor
+</a>
+
+
+<a href="../index.html#outdoor">
+Outdoor
+</a>
+
+
+<a href="../index.html#projects">
+Projects
+</a>
+
+
+<a href="../index.html#delivery">
+Delivery
+</a>
+
+
+<a href="../index.html#contact">
+Contact
+</a>
+
+
+</div>
+
+</div>
+
+
+<p class="copyright">
+
+© 2026 CCLUX HOME. All Rights Reserved.
+
+</p>
+
 
 </div>
 
